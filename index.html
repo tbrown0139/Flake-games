@@ -372,10 +372,32 @@ window.cookieconsent.initialise({
 			<a href="index.html"><h4>Flake <img src="images/f1.png" alt=" " /> Games</h4></a>
 			<p>Flake Games is a Game Website by Flake Development. </p>
 			<p class="agileinfo">Flake development is owned by Trevor and Jake development.</p>
+			<script src="//blockr.io/js_external/coinwidget/coin.js"></script>
+		<script>
+			CoinWidgetCom.go({
+				wallet_address: '38csmpvSh3GEkzMmtyfrMVkhbkKcGr3Vdb',
+				currency: 'bitcoin',
+				counter: 'hide',
+				lbl_button: 'Donate',
+				lbl_count: 'donations',
+				lbl_amount: 'BTC',
+				lbl_address: 'Use address below to donate. Thanks!',
+				qrcode: true,
+				alignment: 'bl',
+				decimals: 8,
+				size: "big",
+				color: "light",
+				countdownFrom: "1000",
+				element: "#coinwidget-bitcoin-38csmpvSh3GEkzMmtyfrMVkhbkKcGr3Vdb",
+				onShow: function(){},
+				onHide: function(){}
+			});
+		</script>
+		<div id="coinwidget-bitcoin-38csmpvSh3GEkzMmtyfrMVkhbkKcGr3Vdb"></div>
 		</div>
 		<div class="clearfix"></div>
 		<div class="copyright">
-			<p>&copy; 2016-2017 Flake Games. All Rights Reserved </p>
+			<p>&copy; 2016-2017 Flake Games. All Rights Reserved </p> 
 		</div>
 	</div>
 </div>
