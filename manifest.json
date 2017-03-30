@@ -1,6 +1,6 @@
 {
-  "name": "OneSignal Example",
-  "short_name": "OneSignalExample",
+  "name": "Flake Games",
+  "short_name": "Flake",
   "start_url": "/",
   "display": "standalone",
   "gcm_sender_id": "482941778795",
