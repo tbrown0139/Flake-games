@@ -32,7 +32,7 @@ left: '0px', /* Only applied if bottom-left */
 right: '0px' /* Only applied if bottom-right */
 },
 prenotify: true, /* Show an icon with 1 unread message for first-time site visitors */
-showCredit: false, /* Hide the OneSignal logo */
+showCredit: true, /* Hide the OneSignal logo */
 text: {
 'tip.state.unsubscribed': 'Subscribe to notifications',
 'tip.state.subscribed': "You're subscribed to notifications",
@@ -46,12 +46,8 @@ text: {
 'dialog.main.button.unsubscribe': 'UNSUBSCRIBE',
 'dialog.blocked.title': 'Unblock Notifications',
 'dialog.blocked.message': "Follow these instructions to allow notifications:"
-}
 },
-	    notifyButton: {
-    enable: true, // Required to use the notify button
-    // Your other notify button settings here
-    colors: { // Customize the colors of the main button and dialog popup button
+		    colors: { // Customize the colors of the main button and dialog popup button
       'circle.background': 'rgb(84,110,123)',
       'circle.foreground': 'white',
       'badge.background': 'rgb(84,110,123)',
@@ -63,7 +59,8 @@ text: {
       'dialog.button.background': 'rgb(84,110,123)',
       'dialog.button.foreground': 'white'
     },
-  }
+}
+	 
 	    
     }]);
   </script>
