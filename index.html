@@ -215,7 +215,34 @@ window.cookieconsent.initialise({
 			<span class="glyphicon glyphicon-bell" aria-hidden="true"></span>
 			<h4>Web Notifications</h4>
 			<p>We Have web push notifications to let you know of new games</p>
-			<a href="#">Enable</a>
+			<a href="#" id="subscribe-link" >Enable</a>
+			<script>
+        function subscribe() {
+            OneSignal.push(["registerForPushNotifications"]);
+            event.preventDefault();
+        }
+
+        var OneSignal = OneSignal || [];
+        /* This example assumes you've already initialized OneSignal */
+        OneSignal.push(function() {
+            // If we're on an unsupported browser, do nothing
+            if (!OneSignal.isPushNotificationsSupported()) {
+                return;
+            }
+            OneSignal.isPushNotificationsEnabled(function(isEnabled) {
+                if (isEnabled) {
+                    // The user is subscribed to notifications
+                    // Don't show anything
+                } else {
+                    document.getElementById("subscribe-link").addEventListener('click', subscribe);
+                    document.getElementById("subscribe-link").style.display = '';
+                }
+            });
+        });
+    </script>
+			
+			
+			
 		</div>
 		<div class="col-md-3 service-grid-agileits service-grid-agileits-bottom">
 			<span class="glyphicon glyphicon-comment" aria-hidden="true"></span>
