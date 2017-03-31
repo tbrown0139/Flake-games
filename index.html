@@ -77,6 +77,8 @@ text: {
 <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
 <link rel="stylesheet" href="css/flexslider.css" type="text/css" media="screen" property="" />
 <link href="css/style.css" rel="stylesheet" type="text/css" media="all" />	
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
+<script type="text/javascript" src="https://blockchain.info/Resources/js/pay-now-button.js"></script>
 <!--// css -->
 <!-- font -->
 <link href='//fonts.googleapis.com/css?family=Josefin+Sans:400,100,100italic,300,300italic,400italic,600,600italic,700,700italic' rel='stylesheet' type='text/css'>
@@ -466,34 +468,37 @@ window.cookieconsent.initialise({
 			<div class="col-md-3 img-w3-agile footer-middle-wthree">
 				<a href="#"><img src="images/coming-soon.jpg" alt=" " /></a>
 			</div>
+			
+			
 			<div class="clearfix"></div>
 		</div>
 		<div class="col-md-4 footer-right-w3">
 			<a href="index.html"><h4>Flake <img src="images/f1.png" alt=" " /> Games</h4></a>
 			<p>Flake Games is a Game Website by Flake Development. </p>
-			<p class="agileinfo">Flake development is owned by Trevor and Jake development.</p>
-			<script src="//blockr.io/js_external/coinwidget/coin.js"></script>
-		<script>
-			CoinWidgetCom.go({
-				wallet_address: '38csmpvSh3GEkzMmtyfrMVkhbkKcGr3Vdb',
-				currency: 'bitcoin',
-				counter: 'hide',
-				lbl_button: 'Donate',
-				lbl_count: 'donations',
-				lbl_amount: 'BTC',
-				lbl_address: 'Use address below to donate. Thanks!',
-				qrcode: true,
-				alignment: 'bl',
-				decimals: 8,
-				size: "big",
-				color: "light",
-				countdownFrom: "1000",
-				element: "#coinwidget-bitcoin-38csmpvSh3GEkzMmtyfrMVkhbkKcGr3Vdb",
-				onShow: function(){},
-				onHide: function(){}
-			});
-		</script>
-		<div id="coinwidget-bitcoin-38csmpvSh3GEkzMmtyfrMVkhbkKcGr3Vdb"></div>
+			
+			
+			
+			<div style="font-size:16px;margin:0 auto;width:300px" class="blockchain-btn"
+     data-address="3PR17VZVWVrVjMnNGcMRaK9T9ytXJt8y3n"
+     data-shared="false">
+    <div class="blockchain stage-begin">
+        <img src="https://blockchain.info/Resources/buttons/donate_64.png"/>
+    </div>
+    <div class="blockchain stage-loading" style="text-align:center">
+        <img src="https://blockchain.info/Resources/loading-large.gif"/>
+    </div>
+    <div class="blockchain stage-ready">
+         <p align="center">Please Donate To Bitcoin Address: <b>[[address]]</b></p>
+         <p align="center" class="qr-code"></p>
+    </div>
+    <div class="blockchain stage-paid">
+         Donation of <b>[[value]] BTC</b> Received. Thank You.
+    </div>
+    <div class="blockchain stage-error">
+        <font color="red">[[error]]</font>
+    </div>
+</div>
+			
 		</div>
 		<div class="clearfix"></div>
 		<div class="copyright">
