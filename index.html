@@ -118,6 +118,36 @@ window.cookieconsent.initialise({
 	
 	
 	
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+	
+	 <script>var fuckAdBlock = undefined;</script>
+    <script src="fuckadblock.min.js"></script>
+    <script>
+        // We create the function that will be executed if AdBlock is detected
+        var adBlockDetected = function() {
+            $('h1 span').text('yes');
+        }
+        // We create the function that will be executed if AdBlock is NOT detected
+        var adBlockUndetected = function() {
+            $('h1 span').text('no');
+        }
+        // We observe if the variable "fuckAdBlock" exists
+        if(typeof  FuckAdBlock === 'undefined') {
+            // If it does not exist, it means that AdBlock blocking the script FuckAdBlock
+            // Therefore the function "adBlockDetected" is executed
+            // PS: The function is executed on the "document ready" in order to select the HTML with jQuery
+            $(document).ready(adBlockDetected);
+        } else {
+            // Otherwise, our functions we add to FuckAdBlock for a classic detection
+            fuckAdBlock.on(true, adBlockDetected).on(false, adBlockUndetected);
+        }
+    </script>
+	
+	
+	
+	
+	
+	
 </head>
 <body> 
 <!-- Header -->
@@ -193,32 +223,7 @@ window.cookieconsent.initialise({
 		
 		<h2>Trending Games</h2>
 		
-		<style>
-#iHWClPbIcrmv {
-display: none;
-margin-bottom: 30px;
-padding: 20px 10px;
-background: #D30000;
-text-align: center;
-font-weight: bold;
-color: #fff;
-border-radius: 5px;
-}
-</style>
-
-<div id="iHWClPbIcrmv">
-  Our website is made possible by displaying online advertisements to our visitors.<br>
-  Please consider supporting us by disabling your ad blocker.
-</div>
-
-<script src="ads.js" type="text/javascript"></script>
-<script type="text/javascript">
-
-if(!document.getElementById('FByPOeqCdiMA')){
-  document.getElementById('iHWClPbIcrmv').style.display='block';
-}
-
-</script>
+		 <h1>AdBlock detected: <span>loading...</span></h1>
 		
 		
 
