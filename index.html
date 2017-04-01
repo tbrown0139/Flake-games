@@ -124,10 +124,10 @@ window.cookieconsent.initialise({
 	<script src="./fuckadblock.js" integrity="sha256-flllputoHvX4pZ2s1ujIJj3Lu1EuRB5TL+6UKpDEx+o="></script>
 	<script>
 		var adBlockDetected = function() {
-			$('#result').removeClass('alert-info alert-success').addClass('alert-danger').text('AdBlock detected =(');
+			$('#result').removeClass('alert-info alert-success').addClass('alert-danger').text('AdBlock detected Our website is made possible by displaying online advertisements to our visitors. Please consider supporting us by disabling your ad blocker ');
 		}
 		var adBlockUndetected = function() {
-			$('#result').removeClass('alert-info alert-danger').addClass('alert-success').text('AdBlock undetected =)');
+			$('#result').removeClass('alert-info alert-danger').addClass('alert-success').text('AdBlock undetected. Thank you for not using an adblocker =)');
 		}
 		if(typeof fuckAdBlock === 'undefined') {
 			$(document).ready(adBlockDetected);
