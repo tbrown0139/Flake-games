@@ -1,0 +1,6 @@
+User-Agent: *
+Disallow: 
+Disallow: /single.html
+Disallow: /flap.html
+Disallow: /about.html
+Disallow: /contact.html
