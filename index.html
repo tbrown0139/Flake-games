@@ -118,30 +118,47 @@ window.cookieconsent.initialise({
 	
 	
 	
-	<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+	<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.7/highlight.min.js"></script>
 	
-	 <script>var fuckAdBlock = undefined;</script>
-    <script src="./fuckadblock.min.js"></script>
-    <script>
-        // We create the function that will be executed if AdBlock is detected
-        var adBlockDetected = function() {
-            $('h1 span').text('yes');
-        }
-        // We create the function that will be executed if AdBlock is NOT detected
-        var adBlockUndetected = function() {
-            $('h1 span').text('no');
-        }
-        // We observe if the variable "fuckAdBlock" exists
-        if(typeof  FuckAdBlock === 'undefined') {
-            // If it does not exist, it means that AdBlock blocking the script FuckAdBlock
-            // Therefore the function "adBlockDetected" is executed
-            // PS: The function is executed on the "document ready" in order to select the HTML with jQuery
-            $(document).ready(adBlockDetected);
-        } else {
-            // Otherwise, our functions we add to FuckAdBlock for a classic detection
-            fuckAdBlock.on(true, adBlockDetected).on(false, adBlockUndetected);
-        }
-    </script>
+	 <script>
+		$(document).ready(function() {
+			$('pre code').each(function(i, block) {
+				hljs.highlightBlock(block);
+			});
+		});
+	</script>
+	
+	<script>var fuckAdBlock = undefined;</script>
+	<script src="./fuckadblock.js" integrity="sha256-flllputoHvX4pZ2s1ujIJj3Lu1EuRB5TL+6UKpDEx+o="></script>
+	<script>
+		var adBlockDetected = function() {
+			$('#result').removeClass('alert-info alert-success').addClass('alert-danger').text('AdBlock detected =(');
+		}
+		var adBlockUndetected = function() {
+			$('#result').removeClass('alert-info alert-danger').addClass('alert-success').text('AdBlock undetected =)');
+		}
+		if(typeof fuckAdBlock === 'undefined') {
+			$(document).ready(adBlockDetected);
+		} else {
+			fuckAdBlock.debug.set(true).on(true, adBlockDetected).on(false, adBlockUndetected);
+		}
+		
+		$(document).ready(function() {
+			$('#check-again').click(function() {
+				$('#result').removeClass('alert-success alert-danger').addClass('alert-info').text('Checking...');
+				if(typeof fuckAdBlock === 'undefined') {
+					setTimeout(function() {// Just serves to make visible checking
+						adBlockDetected();
+					}, 100);
+				} else {
+					fuckAdBlock.check();
+				}
+			});
+		});
+	</script>
+	
+	
 	
 	
 	
@@ -223,7 +240,10 @@ window.cookieconsent.initialise({
 		
 		<h2>Trending Games</h2>
 		
-		  <h1>AdBlock detected: <span>loading...</span></h1>
+		  <div class="alert alert-info" id="result">
+					Checking...
+				</div>
+
 
 		
 		
@@ -336,13 +356,13 @@ window.cookieconsent.initialise({
 		<div class="col-md-3 service-grid-agileits service-grid-agileits-bottom">
 			<span class="glyphicon glyphicon-comment" aria-hidden="true"></span>
 			<h4>Support</h4>
-			<p>We Have a Support Team</p>
+			<p>Our Support Team is avaible to help when needed</p>
 			<a href="#">Contact</a>
 		</div>
 		<div class="col-md-3 service-grid-agileits service-grid-agileits-bottom">
-			<span class="glyphicon glyphicon-phone" aria-hidden="true"></span>
-			<h4>Phone Support</h4>
-			<p>Some Games have phone support</p>
+			<span class="glyphicon glyphicon-saved" aria-hidden="true"></span>
+			<h4>New Updates</h4>
+			<p>We Get new Updates all the time</p>
 			<a href="#">Read More</a>
 		</div>
 		<div class="clearfix"></div>
