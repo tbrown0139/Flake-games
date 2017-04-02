@@ -3,6 +3,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <meta name="keywords" content="Flake Games">
+	
 <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
 <!-- css -->
 <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all">
@@ -14,6 +15,12 @@
 <!-- //font -->
 <script src="js/jquery.min.js"></script>
 <script src="js/bootstrap.js"></script>
+	<script> 
+$(function(){
+  $("#header").load("header.html"); 
+  $("#footer").load("footer.html"); 
+});
+</script> 
 	
 	<meta name="adbit-site-verification" content="784ad8a569531a8872d3e559cc4bb32104afcee26430f1bb1d3668a64ecec6e3" />
 
@@ -48,31 +55,8 @@ window.cookieconsent.initialise({
 <!-- banner -->
 <div class="sub-banner">
 		<!-- Navbar -->
-		<nav class="navbar navbar-default">
-			<div class="container">
+		<div id="header"></div>
 
-				<div class="navbar-header">
-					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-						<span class="sr-only">Toggle navigation</span>
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-					</button>
-					<a href="index.html"><h1>Flake <img src="images/c1.png" alt=" "> Games</h1></a>
-				</div>
-
-				<div id="navbar" class="navbar-collapse collapse">
-					<ul class="nav navbar-nav navbar-right">
-						<li class="hover-effect"><a href="index.html">Home</a></li>
-						<li class="hover-effect"><a href="#">About</a></li>
-						<li class="hover-effect"><a href="#">Games</a></li>
-						<li class="hover-effect"><a href="#">News</a></li>
-						<li class="hover-effect"><a href="#">Contact</a></li>
-					</ul>
-				</div>
-
-			</div>
-		</nav>
 </div>
 <!-- banner -->
 <!-- breadcrumbs -->
