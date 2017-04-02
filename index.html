@@ -116,47 +116,34 @@ window.cookieconsent.initialise({
 })});
 </script>
 	
-	
-	
-<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-	<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.7/highlight.min.js"></script>
-	
-	 <script>
-		$(document).ready(function() {
-			$('pre code').each(function(i, block) {
-				hljs.highlightBlock(block);
-			});
-		});
-	</script>
-	
-	<script>var fuckAdBlock = undefined;</script>
-	<script src="./fuckadblock.js" integrity="sha256-flllputoHvX4pZ2s1ujIJj3Lu1EuRB5TL+6UKpDEx+o="></script>
-	<script>
-		var adBlockDetected = function() {
-			$('#result').removeClass('alert-info alert-success').addClass('alert-danger').text('AdBlock detected =(');
+	<style>
+		header {
+			margin-bottom: 20px;
 		}
-		var adBlockUndetected = function() {
-			$('#result').removeClass('alert-info alert-danger').addClass('alert-success').text('AdBlock undetected =)');
+		.outline {
+			width: 302px;
+			height: 252px;
+			border: 1px solid #cccccc;
+			border-radius: 4px;
+			background-color: #f2dede;
 		}
-		if(typeof fuckAdBlock === 'undefined') {
-			$(document).ready(adBlockDetected);
-		} else {
-			fuckAdBlock.debug.set(true).on(true, adBlockDetected).on(false, adBlockUndetected);
+		.pub_300x250 {
+			width: 300px;
+			height: 250px;
+			background-color: #dff0d8;
 		}
-		
-		$(document).ready(function() {
-			$('#check-again').click(function() {
-				$('#result').removeClass('alert-success alert-danger').addClass('alert-info').text('Checking...');
-				if(typeof fuckAdBlock === 'undefined') {
-					setTimeout(function() {// Just serves to make visible checking
-						adBlockDetected();
-					}, 100);
-				} else {
-					fuckAdBlock.check();
-				}
-			});
-		});
-	</script>
+		h5.bg-success,
+		h5.bg-danger {
+			padding: 8px;
+			border: 1px solid #cccccc;
+			border-radius: 4px;
+		}
+		pre {
+			background-color: #f0f0f0;
+		}
+	</style>
+	
+	
 	
 	
 	
@@ -240,9 +227,9 @@ window.cookieconsent.initialise({
 		
 		<h2>Trending Games</h2>
 		
-		  <div class="alert alert-info" id="result">
-					Checking...
-				</div>
+		  
+				<h5 class="bg-success" id="fuck-adb-not-enabled" style="display: none;">AdBlock is not enabled</h5>
+				<h5 class="bg-danger" id="fuck-adb-enabled" style="display: none;">AdBlock is enabled</h5>
 
 
 		
@@ -610,6 +597,63 @@ var $zoho= $zoho || {salesiq:{values:{},ready:function(){}}};var d=document;s=d.
 s.defer=true;s.src="https://salesiq.zoho.com/trevorjake/float.ls?embedname=flakegames";
 t=d.getElementsByTagName("script")[0];t.parentNode.insertBefore(s,t);
 </script>
+	
+	
+	
+	
+	
+	
+	
+	
+	<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script src="./fuckadblock.js"></script>
+	<script>
+		function adBlockDetected() {
+			$('#fuck-adb-enabled').show();
+			$('#fuck-adb-not-enabled').hide();
+		}
+		function adBlockNotDetected() {
+			$('#fuck-adb-enabled').hide();
+			$('#fuck-adb-not-enabled').show();
+		}
+		
+		if(typeof fuckAdBlock === 'undefined') {
+			adBlockDetected();
+		} else {
+			fuckAdBlock.setOption({ debug: true });
+			fuckAdBlock.onDetected(adBlockDetected).onNotDetected(adBlockNotDetected);
+		}
+		
+		function checkAgain() {
+			$('#fuck-adb-enabled').hide();
+			$('#fuck-adb-not-enabled').hide();
+			// setTimeout 300ms for the recheck is visible when you click on the button
+			setTimeout(function() {
+				if(typeof fuckAdBlock === 'undefined') {
+					adBlockDetected();
+				} else {
+					fuckAdBlock.onDetected(adBlockDetected).onNotDetected(adBlockNotDetected);
+					fuckAdBlock.check();
+				}
+			}, 300);
+		}
+	</script>
+	<script src="http://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.7/highlight.min.js"></script>
+	<script>
+		$('pre code').each(function(i, block) {
+			hljs.highlightBlock(block);
+		});
+	</script>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 	
 	
 	
