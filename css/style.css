@@ -1948,6 +1948,14 @@ color:rgb(2, 24, 136) !important;
 		width: 45%;
 		float: left;
 	}
+	.wthree_blog_left_2 {
+		width: 75%;
+		float: left;
+	}
+	.wthree_blog_right_2 {
+		width: 25%;
+		float: left;
+	}
 	.w3ls_search input[type="submit"] {
 		background: url(../images/img-sp.png)  no-repeat 12px -392px rgb(2, 24, 136);
 		width:18%;
