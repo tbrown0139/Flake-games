@@ -118,6 +118,11 @@ window.cookieconsent.initialise({
 			<div class="col-md-7 wthree_blog_left_2">
 				<div class="wthree_blog_left_grid">
 					<div class="wthree_blog_left_grid_slider">
+					
+						<!-- Adblocker Text -->
+		<h5 class="bg-success" id="fuck-adb-not-enabled" style="display: none;">Thank You! For not using an Adblocker on our site. </h5>
+				<h5 class="bg-danger" id="fuck-adb-enabled" style="display: none;">AdBlock is enabled! Can you Please Disable your Adblocker <a href="article/disable-adblocker.html">Learn How</a> </h5> <br/>
+		<!--// Adblocker Text -->
 						
 <iframe src="//runcpa.com/rotator/ada7997328" frameborder="0" style="overflow: hidden;" scrolling="no"></iframe>
 						<div class="miniclip-game-embed" data-game-name="8-ball-pool-multiplayer" data-theme="0" data-width="750" data-height="520" data-language="en">	</div>			</div>
@@ -178,5 +183,48 @@ window.cookieconsent.initialise({
   ga('send', 'pageview');
 
 </script>
+	
+	<!--adblocker Code -->
+	
+	
+	<script src=".././fuckadblock.js"></script>
+	<script>
+		function adBlockDetected() {
+			$('#fuck-adb-enabled').show();
+			$('#fuck-adb-not-enabled').hide();
+		}
+		function adBlockNotDetected() {
+			$('#fuck-adb-enabled').hide();
+			$('#fuck-adb-not-enabled').show();
+		}
+		
+		if(typeof fuckAdBlock === 'undefined') {
+			adBlockDetected();
+		} else {
+			fuckAdBlock.setOption({ debug: true });
+			fuckAdBlock.onDetected(adBlockDetected).onNotDetected(adBlockNotDetected);
+		}
+		
+		function checkAgain() {
+			$('#fuck-adb-enabled').hide();
+			$('#fuck-adb-not-enabled').hide();
+			// setTimeout 300ms for the recheck is visible when you click on the button
+			setTimeout(function() {
+				if(typeof fuckAdBlock === 'undefined') {
+					adBlockDetected();
+				} else {
+					fuckAdBlock.onDetected(adBlockDetected).onNotDetected(adBlockNotDetected);
+					fuckAdBlock.check();
+				}
+			}, 300);
+		}
+	</script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.7/highlight.min.js"></script>
+	<script>
+		$('pre code').each(function(i, block) {
+			hljs.highlightBlock(block);
+		});
+	</script>
+	<!--// Adblocker Code -->
 
 </body></html>
