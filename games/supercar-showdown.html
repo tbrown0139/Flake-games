@@ -1,3 +1,4 @@
+<!DOCTYPE HTML>
 <html lang="en"><head>
 <title>Supercar Showdown | Flake Games</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -39,7 +40,37 @@ window.cookieconsent.initialise({
 	
 	
 	
+	
+	<script type="application/ld+json">
+{
+  "@context": "http://schema.org/",
+  "@type": "Review",
+  "itemReviewed": {
+    "@type": "Game",
+    "name": "SuperCar Showdown"
+  },
+  "author": {
+    "@type": "Organization",
+    "name": "Flake Games"
+  },
+  "reviewRating": {
+    "@type": "Rating",
+    "ratingValue": "4.9",
+    "bestRating": "5"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Flake Games"
+  }
+}
+</script>
+	
+	
+	
+	
+	
 </head>
+	
 <body> 
 	
 <!-- banner -->
@@ -55,7 +86,7 @@ window.cookieconsent.initialise({
 						<span class="icon-bar"></span>
 						<span class="icon-bar"></span>
 					</button>
-					<a href="../index.html"><h1>Flake <img src="../images/c1.png" alt=" "> Games</h1></a>
+					<a href="../index.html"> <h1>Flake <img src="../images/c1.png" alt=" "> Games</h1> </a>
 				</div>
 
 				<div id="navbar" class="navbar-collapse collapse">
@@ -94,6 +125,10 @@ window.cookieconsent.initialise({
 			<div class="col-md-7 wthree_blog_left">
 				<div class="wthree_blog_left_grid">
 					<div class="wthree_blog_left_grid_slider">
+						<!-- Adblocker Text -->
+		<h5 class="bg-success" id="fuck-adb-not-enabled" style="display: none;">Thank You! For not using an Adblocker on our site. </h5>
+				<h5 class="bg-danger" id="fuck-adb-enabled" style="display: none;">AdBlock is enabled! Can you Please Disable your Adblocker <a href="article/disable-adblocker.html">Learn How</a> </h5> <br/>
+		<!--// Adblocker Text -->
 						
 <iframe data-aa='471536' src='//ad.a-ads.com/471536?size=728x90' scrolling='no' style='width:728px; height:90px; border:0px; padding:0;overflow:hidden' allowtransparency='true'></iframe>
 
@@ -103,7 +138,7 @@ window.cookieconsent.initialise({
 
 					<ul>
 						<li><span class="glyphicon glyphicon-user" aria-hidden="true"></span><a href="#">miniclip </a> <span class="label label-info">Verfied</span> <i>|</i></li>
-						<li></li>
+						
 						
 						<li><span class="glyphicon glyphicon-tags" aria-hidden="true"></span>Racer Games<i>|</i></li> <li><span class="glyphicon glyphicon-star" aria-hidden="true"></span>4.9/5</li>
 					</ul>
@@ -163,7 +198,7 @@ s.setAttribute('data-timestamp', +new Date());
 				
 			</div>
 			<div class="col-md-5 wthree_blog_right">
-				<iframe data-aa='471521' src='//ad.a-ads.com/471521?size=120x600' scrolling='no' style='width:120px; height:600px; border:0px; padding:0;overflow:hidden' allowtransparency='true'></iframe>
+				
 
 
 
@@ -176,6 +211,7 @@ s.setAttribute('data-timestamp', +new Date());
 			<div class="clearfix"> </div>
 		</div>
 	</div>
+		</div>
 <!-- //single -->	
 
 <!-- footer -->
@@ -252,6 +288,64 @@ s.setAttribute('data-timestamp', +new Date());
   ga('send', 'pageview');
 
 </script>
+		
+		<!--adblocker Code -->
+	
+	
+	<script src="./fuckadblock.js"></script>
+	<script>
+		function adBlockDetected() {
+			$('#fuck-adb-enabled').show();
+			$('#fuck-adb-not-enabled').hide();
+		}
+		function adBlockNotDetected() {
+			$('#fuck-adb-enabled').hide();
+			$('#fuck-adb-not-enabled').show();
+		}
+		
+		if(typeof fuckAdBlock === 'undefined') {
+			adBlockDetected();
+		} else {
+			fuckAdBlock.setOption({ debug: true });
+			fuckAdBlock.onDetected(adBlockDetected).onNotDetected(adBlockNotDetected);
+		}
+		
+		function checkAgain() {
+			$('#fuck-adb-enabled').hide();
+			$('#fuck-adb-not-enabled').hide();
+			// setTimeout 300ms for the recheck is visible when you click on the button
+			setTimeout(function() {
+				if(typeof fuckAdBlock === 'undefined') {
+					adBlockDetected();
+				} else {
+					fuckAdBlock.onDetected(adBlockDetected).onNotDetected(adBlockNotDetected);
+					fuckAdBlock.check();
+				}
+			}, 300);
+		}
+	</script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.7/highlight.min.js"></script>
+	<script>
+		$('pre code').each(function(i, block) {
+			hljs.highlightBlock(block);
+		});
+	</script>
+	<!--// Adblocker Code -->
+	
+	<script>
+$(document).ready(function(){
+    $('[data-toggle="tooltip"]').tooltip(); 
+});
+</script>
+	
+	<script>
+$(document).ready(function(){
+    $('[data-toggle="popover"]').popover(); 
+});
+</script>
+		
+		
 
 </body>
+	
 	</html>
