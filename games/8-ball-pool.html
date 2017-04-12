@@ -12,6 +12,7 @@
 <meta name="twitter:title" content="8 Ball Pool | Flake Games">
 <meta name="twitter:description" content="8 Ball Pool is the biggest & best multiplayer Pool game online. Play billiards for FREE against other players & friends in 1-on-1 matches, enter tournaments to win big! - Play for Free on Flake Games">
 <meta name="twitter:image" content="https://s-media-cache-ak0.pinimg.com/originals/bd/78/17/bd781796ba9076311f64de45dc86d92e.jpg">
+	
 	<link href="http://vjs.zencdn.net/5.19.1/video-js.css" rel="stylesheet">
 
   <!-- If you'd like to support IE8 -->
@@ -194,6 +195,19 @@ window.cookieconsent.initialise({
       <a href="http://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a>
     </p>
   </video>
+		
+		<script src="//path/to/video.min.js"></script>
+<script src="../videojs-brand/dist/videojs-brand.min.js"></script>
+<script>
+  var player = videojs('my-video');
+  player.brand({
+  	image: "../images/flake_logo.png",
+    title: "Flake Games",
+    destination: "https://flake.ga",
+    destinationTarget: "_top"
+  });
+</script> 
+		
 
   <script src="http://vjs.zencdn.net/5.19.1/video.js"></script>
 		
