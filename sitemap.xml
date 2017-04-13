@@ -8,73 +8,103 @@
 
 <url>
   <loc>https://flake.ga/</loc>
-  <lastmod>2017-04-02T05:29:49+00:00</lastmod>
+  <lastmod>2017-04-12T02:01:58+00:00</lastmod>
   <changefreq>always</changefreq>
   <priority>1.00</priority>
 </url>
 <url>
   <loc>https://flake.ga/index.html</loc>
-  <lastmod>2017-04-02T02:00:02+00:00</lastmod>
+  <lastmod>2017-04-12T02:01:58+00:00</lastmod>
   <changefreq>always</changefreq>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://flake.ga/games.html</loc>
-  <lastmod>2017-04-02T05:29:48+00:00</lastmod>
+  <lastmod>2017-04-12T02:01:56+00:00</lastmod>
   <changefreq>always</changefreq>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://flake.ga/contact.html</loc>
-  <lastmod>2017-04-02T05:29:48+00:00</lastmod>
+  <lastmod>2017-04-12T02:01:56+00:00</lastmod>
   <changefreq>always</changefreq>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://flake.ga/article/disable-adblocker.html</loc>
-  <lastmod>2017-04-02T05:29:48+00:00</lastmod>
+  <lastmod>2017-04-12T02:01:56+00:00</lastmod>
   <changefreq>always</changefreq>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://flake.ga/flap.html</loc>
-  <lastmod>2017-04-02T05:29:48+00:00</lastmod>
-  <changefreq>always</changefreq>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://flake.ga/games/supercar-showdown.html</loc>
-  <lastmod>2017-04-02T05:29:48+00:00</lastmod>
-  <changefreq>always</changefreq>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://flake.ga/games/sprint-club-nitro.html</loc>
-  <lastmod>2017-04-02T05:29:48+00:00</lastmod>
-  <changefreq>always</changefreq>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://flake.ga/article/update-april-2017.html</loc>
-  <lastmod>2017-04-02T05:29:48+00:00</lastmod>
+  <lastmod>2017-04-12T02:01:56+00:00</lastmod>
   <changefreq>always</changefreq>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://flake.ga/games/tumblestump-2.html</loc>
-  <lastmod>2017-04-02T05:29:48+00:00</lastmod>
+  <lastmod>2017-04-12T02:01:56+00:00</lastmod>
   <changefreq>always</changefreq>
-  <priority>0.64</priority>
+  <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://flake.ga/games/flip-diving.html</loc>
-  <lastmod>2017-04-02T05:29:48+00:00</lastmod>
+  <loc>https://flake.ga/games/supercar-showdown.html</loc>
+  <lastmod>2017-04-12T02:01:56+00:00</lastmod>
   <changefreq>always</changefreq>
-  <priority>0.64</priority>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://flake.ga/games/8-ball-pool.html</loc>
+  <lastmod>2017-04-12T02:01:56+00:00</lastmod>
+  <changefreq>always</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://flake.ga/games/sprint-club-nitro.html</loc>
+  <lastmod>2017-04-12T02:01:56+00:00</lastmod>
+  <changefreq>always</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://flake.ga/games/dusk-drive.html</loc>
+  <lastmod>2017-04-12T02:01:56+00:00</lastmod>
+  <changefreq>always</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://flake.ga/games/roller-rider.html</loc>
+  <lastmod>2017-04-12T02:01:56+00:00</lastmod>
+  <changefreq>always</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://flake.ga/games/stickman.html</loc>
+  <lastmod>2017-04-12T02:01:56+00:00</lastmod>
+  <changefreq>always</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://flake.ga/article/update-april-2017.html</loc>
+  <lastmod>2017-04-12T02:01:56+00:00</lastmod>
+  <changefreq>always</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://flake.ga/terms-service.html</loc>
+  <lastmod>2017-04-12T02:01:58+00:00</lastmod>
+  <changefreq>always</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://flake.ga/privacypolicy.htm</loc>
+  <lastmod>2017-04-12T02:01:58+00:00</lastmod>
+  <changefreq>always</changefreq>
+  <priority>0.80</priority>
 </url>
 <url>
   <loc>https://flake.ga/games/Tropical-flap.html</loc>
-  <lastmod>2017-04-02T05:29:48+00:00</lastmod>
+  <lastmod>2017-04-12T02:01:56+00:00</lastmod>
   <changefreq>always</changefreq>
   <priority>0.64</priority>
 </url>
