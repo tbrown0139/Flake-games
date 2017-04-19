@@ -18,6 +18,81 @@
 	<script type="text/javascript" src="https://adbit.biz/js/show_ads.js"></script>
 
 	
+	<!-- Login -->
+	
+	
+	
+	<script src="https://www.gstatic.com/firebasejs/3.8.0/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyArmk56jX2FaH3YOYTGZ6lg0DbttqOQLjE",
+    authDomain: "tyson-game.firebaseapp.com",
+    databaseURL: "https://tyson-game.firebaseio.com",
+    projectId: "tyson-game",
+    storageBucket: "tyson-game.appspot.com",
+    messagingSenderId: "216510317132"
+  };
+  firebase.initializeApp(config);
+</script>
+	
+	
+	
+	
+	<script type="text/javascript">
+      initApp = function() {
+        firebase.auth().onAuthStateChanged(function(user) {
+          if (user) {
+            // User is signed in.
+            var displayName = user.displayName;
+            var email = user.email;
+            var emailVerified = user.emailVerified;
+            var photoURL = user.photoURL;
+            var uid = user.uid;
+            var providerData = user.providerData;
+            user.getToken().then(function(accessToken) {
+              document.getElementById('sign-in-status').textContent = 'Signed in';
+              document.getElementById('sign-in').textContent = 'Sign out';
+              document.getElementById('account-details').textContent = JSON.stringify({
+                displayName: displayName,
+                email: email,
+                emailVerified: emailVerified,
+                photoURL: photoURL,
+                uid: uid,
+                accessToken: accessToken,
+                providerData: providerData
+              }, null, '  ');
+            });
+          } else {
+            // User is signed out.
+            document.getElementById('sign-in-status').textContent = 'Signed out';
+            document.getElementById('sign-in').textContent = 'Sign in';
+            document.getElementById('account-details').textContent = 'null';
+          }
+        }, function(error) {
+          console.log(error);
+        });
+      };
+
+      window.addEventListener('load', function() {
+        initApp()
+      });
+    </script>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 	
 	<!--twittercard-->
 	
@@ -209,6 +284,9 @@ mixpanel.init("599bbb7dfbe46abdc95d62bf8f009f05");</script><!-- end Mixpanel -->
 						<li class="hover-effect"><a href="index.html">Home</a></li>
 						<li class="hover-effect"><a href="https://trevorjake.gq">About</a></li>
 						<li class="hover-effect"><a href="games.html">Games</a></li>
+						<li class="hover-effect"><a href="#"><div id="sign-in-status"></div>
+    <div id="sign-in"></div></a></li>
+						
 						
 						
 						<li class="hover-effect"><a href="contact.html">Contact</a></li>
