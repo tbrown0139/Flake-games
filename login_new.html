@@ -102,6 +102,12 @@
 			
     </script>
 		
+		<script>
+function displayResult() {
+    document.getElementById('sign-out').addEventListener('click', function() {
+    firebase.auth().signOut();}
+</script>
+		
 		
 	</head>
 	<body class="is-loading">
@@ -117,7 +123,7 @@
 							<div id="user-name"> Welcome</div>
 							<p>Login or Sign Up</p>
 							<div id="firebaseui-auth-container"></div>
-							<button id="sign-out">Sign Out</button>
+							<<button onclick="displayResult()">Signout</button>
 							    <div id="sign-in"></div>
 
 							<div id="sign-in-status"></div>
