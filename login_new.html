@@ -56,11 +56,7 @@
           if (user) {
             // User is signed in.
             var displayName = user.displayName;
-            var email = user.email;
-            var emailVerified = user.emailVerified;
-            var photoURL = user.photoURL;
-            var uid = user.uid;
-            var phoneNumber = user.phoneNumber;
+            
             var providerData = user.providerData;
             user.getToken().then(function(accessToken) {
               document.getElementById('sign-in-status').textContent = 'Signed in';
@@ -109,7 +105,7 @@
 							
 							
 							<div id="sign-in-status"></div>
-    <div id="sign-in"></div>
+    <button id="sign-out">Sign Out</button>
     <div id="account-details"></div>
 						</header>
 						<!--
