@@ -64,6 +64,10 @@
             var providerData = user.providerData;
             user.getToken().then(function(accessToken) {
               document.getElementById('sign-in-status').textContent = 'Signed in';
+	      document.getElementById('user-name').textContent = JSON.stringify({
+                displayName,
+               
+              }, null, '  ');
               document.getElementById('sign-in').textContent = 'Sign out';
               document.getElementById('account-details').textContent = JSON.stringify({
                 displayName: displayName,
@@ -76,6 +80,7 @@
             document.getElementById('sign-in-status').textContent = 'Signed out';
             document.getElementById('sign-in').textContent = 'Sign in';
             document.getElementById('account-details').textContent = 'null';
+	    document.getElementById('user-name').textContent = 'null';
           }
         }, function(error) {
           console.log(error);
@@ -109,6 +114,7 @@
 						<header>
 							<span class="avatar"><img src="images/avatar.jpg" alt="Secure" /></span>
 							<h1>Flake Games</h1>
+							<div id="user-name"></div>
 							<p>Login or Sign Up</p>
 							<div id="firebaseui-auth-container"></div>
 							<button id="sign-out">Sign Out</button>
