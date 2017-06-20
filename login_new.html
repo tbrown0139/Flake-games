@@ -90,6 +90,20 @@
       window.addEventListener('load', function() {
         initApp()
       });
+	
+			
+			
+			
+			
+			firebase.auth().signOut().then(function() {
+  // Sign-out successful.
+}).catch(function(error) {
+  // An error happened.
+});
+			
+			
+			
+			
     </script>
 		
 		
@@ -106,7 +120,7 @@
 							<h1>Flake Games</h1>
 							<p>Login or Sign Up</p>
 							<div id="firebaseui-auth-container"></div>
-							
+							<button id="sign-out">Sign Out</button>
 							    <div id="sign-in"></div>
 
 							<div id="sign-in-status"></div>
