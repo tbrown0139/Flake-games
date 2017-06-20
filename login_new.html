@@ -102,11 +102,7 @@
 			
     </script>
 		
-		<script>
-function displayResult() {
-    document.getElementById('sign-out').addEventListener('click', function() {
-    firebase.auth().signOut();}
-</script>
+		
 		
 		
 	</head>
@@ -192,5 +188,12 @@ function displayResult() {
 					document.body.className += (navigator.userAgent.match(/(MSIE|rv:11\.0)/) ? ' is-ie' : '');
 				}
 			</script>
+		
+		<script>
+function displayResult() {
+    document.getElementById('sign-out').addEventListener('click', function() {
+    firebase.auth().signOut();
+    }
+</script>
 	</body>
 </html>
