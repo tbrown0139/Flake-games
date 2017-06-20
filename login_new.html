@@ -67,7 +67,12 @@
               document.getElementById('sign-in').textContent = 'Sign out';
               document.getElementById('account-details').textContent = JSON.stringify({
                 displayName: displayName,
-                
+                email: email,
+                emailVerified: emailVerified,
+                phoneNumber: phoneNumber,
+                photoURL: photoURL,
+                uid: uid,
+                accessToken: accessToken,
                 providerData: providerData
               }, null, '  ');
             });
@@ -97,7 +102,7 @@
 				<!-- Main -->
 					<section id="main">
 						<header>
-							<span class="avatar"><img src="images/avatar.html" alt="Secure" /></span>
+							<span class="avatar"><img src="images/avatar.jpg" alt="Secure" /></span>
 							<h1>Flake Games</h1>
 							<p>Login or Sign Up</p>
 							<div id="firebaseui-auth-container"></div>
