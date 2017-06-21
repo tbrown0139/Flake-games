@@ -1,3 +1,5 @@
+![Image of loginpage](https://alpha.flake.ga/images/about.jpg)
+
 # Flake Games New Site.
 Welcome to Flake games new site.
 
