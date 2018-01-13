@@ -1,0 +1,93 @@
+{
+  "settings": {
+    "name": "Beta",
+    "currentPage": "index.html",
+    "versionFirst": "4.0.14",
+    "uniqCompNum": 21,
+    "versionPublish": "4.5.4",
+    "theme": {
+      "name": "mobirise4",
+      "title": "Mobirise 4",
+      "styling": {
+        "primaryColor": "#149dcc",
+        "secondaryColor": "#ff3366",
+        "successColor": "#F7ED4A",
+        "infoColor": "#82786E",
+        "warningColor": "#879A9F",
+        "dangerColor": "#B1A374",
+        "mainFont": "Rubik",
+        "display1Font": "Rubik",
+        "display1Size": 4.25,
+        "display2Font": "Rubik",
+        "display2Size": 3,
+        "display5Font": "Rubik",
+        "display5Size": 1.5,
+        "display7Font": "Rubik",
+        "display7Size": 1,
+        "display4Font": "Rubik",
+        "display4Size": 1,
+        "isRoundedButtons": true,
+        "isAnimatedOnScroll": false,
+        "isScrollToTopButton": false
+      },
+      "additionalSetColors": []
+    },
+    "favicon": "",
+    "noImageResize": "",
+    "path": "@PROJECT_PATH@",
+    "screenshot": "screenshot.png"
+  },
+  "pages": {
+    "index.html": {
+      "settings": {
+        "main": true,
+        "title": "Home",
+        "meta_descr": "",
+        "header_custom": "",
+        "footer_custom": "",
+        "html_before": ""
+      },
+      "components": [
+        {
+          "_styles": {
+            "& when not (@fullScreen)": {
+              "padding-top": "(@paddingTop * 15px)",
+              "padding-bottom": "(@paddingBottom * 15px)"
+            },
+            "& when (@bg-type = 'image')": {
+              "background-image": "url(@bg-value)"
+            },
+            "& when (@bg-type = 'color')": {
+              "background-color": "@bg-value"
+            },
+            ".form-container": {
+              "transition": "all .2s",
+              "border": "1px solid #ffffff",
+              "padding": "1rem",
+              "& when (@bgForm)": {
+                "background": "linear-gradient(@formColor1, @formColor2)",
+                "border": "none"
+              }
+            },
+            ".input-group-btn": {
+              "justify-content": "center"
+            },
+            "@media (min-width: 768px)": {
+              ".content-container": {
+                "padding-right": "5rem"
+              }
+            }
+          },
+          "_name": "header15",
+          "_customHTML": "<section group=\"Headers\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{\n         'mbr-fullscreen': fullScreen,\n         'mbr-parallax-background': bg.parallax}\">\n\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"checkbox\" title=\"Full Screen\" name=\"fullScreen\" checked>\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"9\" step=\"1\" value=\"6\" condition=\"fullScreen == false\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"9\" step=\"1\" value=\"6\" condition=\"fullScreen == false\">\n        <input type=\"checkbox\" title=\"Show Arrow\" name=\"showArrow\">\n        <input type=\"checkbox\" title=\"Show Title\" name=\"showTitle\" checked>\n        <input type=\"checkbox\" title=\"Show Text\" name=\"showText\" checked>\n        <input type=\"checkbox\" title=\"Form Background\" name=\"bgForm\">\n        <input type=\"color\" title=\"Form Color 1\" name=\"formColor1\" value=\"#ff7f9f\" condition=\"bgForm\">\n        <input type=\"color\" title=\"Form Color 2\" name=\"formColor2\" value=\"#55b4d4\" condition=\"bgForm\">\n\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Background Image\" value=\"../_images/img/02.jpg\" selected parallax>\n            <input type=\"color\" title=\"Background Color\" value=\"#073B4C\">\n            <input type=\"video\" title=\"Background Video\" value=\"http://www.youtube.com/watch?v=uNCr7NdOJgw\">\n        </fieldset>\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#232323\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.4\" condition=\"overlay && bg.type !== 'color'\">\n    <!-- End block parameters -->\n    </mbr-parameters>\n\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type !== 'color'\" opacity=\"{{overlayOpacity}}\" bg-color=\"{{overlayColor}}\"></div>\n\n    <div class=\"container align-right\">\n<div class=\"row\">\n    <div class=\"mbr-white col-lg-8 col-md-7 content-container\">\n        <h1 class=\"mbr-section-title mbr-bold pb-3 mbr-fonts-style\" mbr-theme-style=\"display-1\" mbr-if=\"showTitle\"><p>JOIN BETA</p></h1>\n        <p class=\"mbr-text pb-3 mbr-fonts-style\" mbr-theme-style=\"display-5\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">\n            Ever looked to test a prodect before launch. Well you might just be the one we are looking for. Apply for beta today!</p>\n    </div>\n    <div class=\"col-lg-4 col-md-5\">\n    <div class=\"form-container\">\n        <div mbr-form class=\"media-container-column\">\n            <div data-form-alert hidden class=\"align-center\">Thank you. We have notified our beta team. They will be in contact very soon.</div>\n            <form class=\"mbr-form\" action=\"beta@flakega.me\" method=\"post\" name=\"Mobirise Form\">\n                <div data-for=\"name\">\n                    <div class=\"form-group\">\n                        <input type=\"text\" class=\"form-control px-3\" name=\"name\" data-form-field=\"Name\" placeholder=\"Name\" required>\n                    </div>\n                </div>\n                <div data-for=\"email\">\n                    <div class=\"form-group\">\n                        <input type=\"email\" class=\"form-control px-3\" name=\"email\" data-form-field=\"Email\" placeholder=\"Email\" required>\n                    </div>\n                </div>\n                <div data-for=\"phone\" hidden=\"hidden\">\n                    <div class=\"form-group\">\n                        <input type=\"tel\" class=\"form-control px-3\" name=\"phone\" data-form-field=\"Phone\" placeholder=\"Phone\" hidden=\"hidden\">\n                    </div>\n                </div>\n                <div class=\"form-group\" data-for=\"message\">\n                    <textarea type=\"text\" class=\"form-control px-3\" name=\"message\" rows=\"7\" placeholder=\"Why do you want to test?\" data-form-field=\"Message\"></textarea>\n                </div>\n                <span mbr-buttons mbr-theme-style=\"display-4\" data-toolbar=\"-mbrLink,-mbrBtnAdd,-mbrBtnMove\" class=\"input-group-btn\"><a href type=\"submit\" class=\"btn btn-secondary btn-form\">APPLY</a></span>\n            </form>\n        </div>\n    </div>\n    </div>\n</div>\n    </div>\n    <div mbr-if=\"showArrow\" class=\"mbr-arrow hidden-sm-down\" aria-hidden=\"true\">\n        <a href=\"#next\">\n            <i class=\"mbri-down mbr-iconfont\"></i>\n        </a>\n    </div>\n</section>",
+          "_cid": "qGgyUdV3ZI",
+          "_anchor": "header15-k",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        }
+      ]
+    }
+  }
+}
