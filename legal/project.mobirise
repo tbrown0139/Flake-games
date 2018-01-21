@@ -10,8 +10,13 @@
     },
     "path": "@PROJECT_PATH@",
     "versionFirst": "4.5.4",
-    "uniqCompNum": 3,
-    "versionPublish": "4.5.4"
+    "uniqCompNum": 4,
+    "versionPublish": "4.5.4",
+    "favicon": "@PROJECT_PATH@/assets/images/invert-300x64-128x27-1.png",
+    "noImageResize": "",
+    "google-analytics": "",
+    "cookiesAlert": "",
+    "siteUrl": "undefined"
   },
   "pages": {
     "index.html": {
@@ -44,7 +49,7 @@
             "overlayColor": "#ffffff",
             "overlayOpacity": "0.4"
           },
-          "title": "LEGAL",
+          "title": "<b>LEGAL</b>",
           "text": "Flake Development",
           "buttons": "<a data-app-btn=\"true\" class=\"btn btn-lg btn-secondary-outline\" href=\"https://flakega.me/privacypolicy.htm\" data-toolbar=\"-mbrBtnMove\">Privacy Policy</a> <a data-app-btn=\"true\" class=\"btn btn-lg btn-white\" href=\"https://flakega.me/terms-service.html\" data-toolbar=\"-mbrBtnMove\">Terms of Service</a> <a data-app-btn=\"true\" class=\"btn btn-lg btn-white-outline btn-secondary-outline\" href=\"#\" data-toolbar=\"-mbrBtnMove\">Cookies Policy&nbsp;</a>",
           "alias": "purity/components",
@@ -58,19 +63,25 @@
               "font-size": "36px"
             },
             "H1": {
-              "color": "#000000"
+              "color": "#000000",
+              "font-family": "'Arimo', sans-serif",
+              "googleLink": "https://fonts.googleapis.com/css?family=Arimo:400,700"
+            },
+            "B": {
+              "font-family": "'Playfair Display', sans-serif",
+              "googleLink": "https://fonts.googleapis.com/css?family=Playfair+Display:400,700&subset=latin,cyrillic"
             }
           }
         },
         {
           "_params": {
-            "logo": false,
-            "showBrand": true,
+            "logo": true,
+            "showBrand": false,
             "showButtons": false,
             "sticky": true,
             "collapsed": true,
             "transparent": true,
-            "color": "#fff",
+            "color": "#ffffff",
             "hamburgerColor": "#000"
           },
           "items": "<li class=\"nav-item\"><a data-app-btn=\"parent\" class=\"nav-link\" data-app-selector=\".nav-link\" href=\"https://flakega.me\">Home</a></li><li class=\"nav-item\"><a data-app-btn=\"parent\" class=\"nav-link\" data-app-selector=\".nav-link\" href=\"https://flakega.me/about\">About</a></li><li class=\"nav-item\"><a data-app-btn=\"parent\" class=\"nav-link\" data-app-selector=\".nav-link\" href=\"https://flakega.me/categories/\">Categories</a></li> <li class=\"nav-item\"><a data-app-btn=\"parent\" class=\"nav-link\" data-app-selector=\".nav-link\" href=\"https://flakega.me/games\">Games</a></li> ",
@@ -78,10 +89,12 @@
           "logo": {
             "image": {
               "active": true,
-              "src": "@PROJECT_PATH@/assets/images/logo.png",
+              "src": "@PROJECT_PATH@/assets/images/invert-300x64.png",
               "height": 128,
               "alt": "Mobirise",
-              "link": "https://mobirise.com"
+              "link": "https://flakega.me",
+              "title": "",
+              "linkInNewWindow": false
             },
             "iconFont": {
               "class": "mbr-iconfont mbr-iconfont-menu",
@@ -89,7 +102,7 @@
               "size": 0
             }
           },
-          "brand": "<a class=\"navbar-brand\" data-app-btn=\"true\" href=\"https://mobirise.com\" data-app-selector=\".navbar-brand\" data-app-placeholder=\"Type Brand Name\" data-toolbar=\"-mbrBtnMove,-mbrBtnAdd,-mbrBtnRemove,mbrColor\">Flake Games</a>",
+          "brand": "<a class=\"navbar-brand\" data-app-btn=\"true\" href=\"https://flakega.me\" data-app-selector=\".navbar-brand\" data-app-placeholder=\"Type Brand Name\" data-toolbar=\"-mbrBtnMove,-mbrBtnAdd,-mbrBtnRemove,mbrColor\">Flake Games</a>",
           "alias": "purity/components",
           "_tags": [
             "Theme"
