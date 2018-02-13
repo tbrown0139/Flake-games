@@ -1366,7 +1366,7 @@ body {
 .cid-qGgDPHMasF {
   padding-top: 120px;
   padding-bottom: 90px;
-  background-image: url("../../../assets/images/jumbotron.jpg");
+  background-image: url("../../../assets/images/mbr-1920x1080.jpg");
 }
 .cid-qGgD80YMSu {
   padding-top: 90px;
@@ -1412,24 +1412,16 @@ body {
 .cid-qGh1nuGall .btn {
   margin: 0 0 .5rem 0;
 }
-.cid-qGhROe5Q7x {
-  padding-top: 90px;
-  padding-bottom: 90px;
-  background-image: url("../../../");
-}
-.cid-qGhROe5Q7x .main {
-  flex-direction: row-reverse;
-}
-.cid-qGhROe5Q7x .main .mbr-section-btn {
-  text-align: right;
-}
-.cid-qGhROe5Q7x .btn {
-  margin: 0 0 .5rem 0;
-}
 .cid-qGhSaExkLZ {
   padding-top: 90px;
   padding-bottom: 90px;
   background: linear-gradient(45deg, #dbd4b8, #25aab2);
+}
+.cid-qGhSaExkLZ .main {
+  flex-direction: row-reverse;
+}
+.cid-qGhSaExkLZ .main .mbr-section-btn {
+  text-align: right;
 }
 .cid-qGhSaExkLZ .btn {
   margin: 0 0 .5rem 0;
@@ -2218,7 +2210,7 @@ body {
 .cid-qGgG68TeEG {
   padding-top: 120px;
   padding-bottom: 120px;
-  background-image: url("../../../assets/images/jumbotron.jpg");
+  background-image: url("../../../assets/images/mbr-720x1080.jpg");
 }
 .cid-qGgGnHRmnn {
   padding-top: 45px;
@@ -3062,6 +3054,11 @@ body {
 }
 .cid-qGh0yoktVx B {
   color: #f7ed4a;
+}
+.cid-qJyPEtewFm {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  background-color: #2e2e2e;
 }
 .cid-qGgEtyQ1FH .navbar {
   padding: .5rem 0;
