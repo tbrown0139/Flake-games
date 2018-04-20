@@ -1,129 +1,35 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<urlset
-      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
-            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
-<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
-
-<url>
-  <loc>http://flakega.me/</loc>
-  <lastmod>2017-11-06T00:07:13+00:00</lastmod>
-  <changefreq>always</changefreq>
-</url>
-<url>
-  <loc>http://flakega.me/index.html</loc>
-  <lastmod>2017-11-06T00:07:13+00:00</lastmod>
-  <changefreq>always</changefreq>
-</url>
-<url>
-  <loc>http://flakega.me/games.html</loc>
-  <lastmod>2017-11-06T00:07:13+00:00</lastmod>
-  <changefreq>always</changefreq>
-</url>
-<url>
-  <loc>http://flakega.me/contact.html</loc>
-  <lastmod>2017-11-06T00:07:13+00:00</lastmod>
-  <changefreq>always</changefreq>
-</url>
-<url>
-  <loc>http://flakega.me/login_new.html</loc>
-  <lastmod>2017-11-06T00:07:13+00:00</lastmod>
-  <changefreq>always</changefreq>
-</url>
-<url>
-  <loc>http://flakega.me/article/disable-adblocker.html</loc>
-  <lastmod>2017-11-06T00:07:13+00:00</lastmod>
-  <changefreq>always</changefreq>
-</url>
-<url>
-  <loc>http://flakega.me/games/tanxio.html</loc>
-  <lastmod>2017-11-06T00:07:13+00:00</lastmod>
-  <changefreq>always</changefreq>
-</url>
-<url>
-  <loc>http://flakega.me/games/tumblestump-2.html</loc>
-  <lastmod>2017-11-06T00:07:13+00:00</lastmod>
-  <changefreq>always</changefreq>
-</url>
-<url>
-  <loc>http://flakega.me/games/supercar-showdown.html</loc>
-  <lastmod>2017-11-06T00:07:13+00:00</lastmod>
-  <changefreq>always</changefreq>
-</url>
-<url>
-  <loc>http://flakega.me/games/8-ball-pool.html</loc>
-  <lastmod>2017-11-06T00:07:13+00:00</lastmod>
-  <changefreq>always</changefreq>
-</url>
-<url>
-  <loc>http://flakega.me/games/sprint-club-nitro.html</loc>
-  <lastmod>2017-11-06T00:07:13+00:00</lastmod>
-  <changefreq>always</changefreq>
-</url>
-<url>
-  <loc>http://flakega.me/games/roller-rider.html</loc>
-  <lastmod>2017-11-06T00:07:13+00:00</lastmod>
-  <changefreq>always</changefreq>
-</url>
-<url>
-  <loc>http://flakega.me/games/bottle-flip.html</loc>
-  <lastmod>2017-11-06T00:07:13+00:00</lastmod>
-  <changefreq>always</changefreq>
-</url>
-<url>
-  <loc>http://flakega.me/games/stickman.html</loc>
-  <lastmod>2017-11-06T00:07:13+00:00</lastmod>
-  <changefreq>always</changefreq>
-</url>
-<url>
-  <loc>http://flakega.me/article/update-april-2017.html</loc>
-  <lastmod>2017-11-06T00:07:13+00:00</lastmod>
-  <changefreq>always</changefreq>
-</url>
-<url>
-  <loc>http://flakega.me/terms-service.html</loc>
-  <lastmod>2017-11-06T00:07:13+00:00</lastmod>
-  <changefreq>always</changefreq>
-</url>
-<url>
-  <loc>http://flakega.me/privacypolicy.htm</loc>
-  <lastmod>2017-11-06T00:07:13+00:00</lastmod>
-  <changefreq>always</changefreq>
-</url>
-<url>
-  <loc>http://flakega.me/games/dusk-drive.html</loc>
-  <lastmod>2017-11-06T00:07:13+00:00</lastmod>
-  <changefreq>always</changefreq>
-</url>
-<url>
-  <loc>http://flakega.me/flap.html</loc>
-  <lastmod>2017-11-06T00:07:13+00:00</lastmod>
-  <changefreq>always</changefreq>
-</url>
-<url>
-  <loc>http://flakega.me/games/flip-diving.html</loc>
-  <lastmod>2017-11-06T00:07:13+00:00</lastmod>
-  <changefreq>always</changefreq>
-</url>
-<url>
-  <loc>http://flakega.me/games/assault-course-2.html</loc>
-  <lastmod>2017-11-06T00:07:13+00:00</lastmod>
-  <changefreq>always</changefreq>
-</url>
-<url>
-  <loc>http://flakega.me/games/bow-master-japan.html</loc>
-  <lastmod>2017-11-06T00:07:13+00:00</lastmod>
-  <changefreq>always</changefreq>
-</url>
-<url>
-  <loc>http://flakega.me/games/saloon-brawl-2.html</loc>
-  <lastmod>2017-11-06T00:07:13+00:00</lastmod>
-  <changefreq>always</changefreq>
-</url>
-<url>
-  <loc>http://flakega.me/games/Tropical-flap.html</loc>
-  <lastmod>2017-11-06T00:07:13+00:00</lastmod>
-  <changefreq>always</changefreq>
-</url>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+	<url>
+		<loc>http://flakega.me/index.html</loc>
+	</url>
+	<url>
+		<loc>http://flakega.me/gamedb.html</loc>
+	</url>
+	<url>
+		<loc>http://flakega.me/soon.html</loc>
+	</url>
+	<url>
+		<loc>http://flakega.me/notifications.html</loc>
+	</url>
+	<url>
+		<loc>http://flakega.me/whatsnew.html</loc>
+	</url>
+	<url>
+		<loc>http://flakega.me/games.html</loc>
+	</url>
+	<url>
+		<loc>http://flakega.me/AccessDenied.html</loc>
+	</url>
+	<url>
+		<loc>http://flakega.me/ip-ban.html</loc>
+	</url>
+	<url>
+		<loc>http://flakega.me/404.html</loc>
+	</url>
+	<url>
+		<loc>http://flakega.me/easter.html</loc>
+	</url>
+	<url>
+		<loc>http://flakega.me/page10.html</loc>
+	</url>
 </urlset>
