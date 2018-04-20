@@ -1,852 +1,491 @@
-<!-- Flake Games Site -->
-<!-- Modefied by Flake Development -->
-<!-- Visit flakedevelop.me to learn more about the developers. -->
 <!DOCTYPE html>
-<html lang="en">
+<html >
 <head>
-<title>Flake Games</title>
-	
-	<!-- Google Tag Manager -->
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-K6V96XL');</script>
-<!-- End Google Tag Manager -->
-	
-	
-	<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-<script>
-     (adsbygoogle = window.adsbygoogle || []).push({
-          google_ad_client: "ca-pub-6510790164476782",
-          enable_page_level_ads: true
-     });
-</script>
-	
-	
-<script>
-	{
-  "@context": "http://schema.org",
-  "@type": "Organization",
-  "url": "http://flakedevelop.me",
-  "logo": "http://flakega.me/images/flake-logo.png"
-}
-	
-	</script>
-	
-	
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-	<meta name="description" content="Flake games is an online gaming site. Updated all the time with latest games and More. Play for free on Flake Games.  Gaming it Real">
-<!-- Ad Info-->
-	<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-<script>
-  (adsbygoogle = window.adsbygoogle || []).push({
-    google_ad_client: "ca-pub-6510790164476782",
-    enable_page_level_ads: true
-  });
-</script>
-	
-	<!-- Ad Info end/-->
-	
-<meta name="keywords" content="Flake Games, Flake Gaming, Flakegames, Flake Games site, Flake Development, gaming it real" />
-<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
-	
-	
-	<meta name="adbit-site-verification" content="784ad8a569531a8872d3e559cc4bb32104afcee26430f1bb1d3668a64ecec6e3" />
-<meta name="google-site-verification" content="l1XYCQw92XkKEypAaIBDancWHWgJxbaVmaA0VPmND0c" />
-	<script type="text/javascript" src="https://adbit.biz/js/show_ads.js"></script>
-
-	<!-- Login -->
-	
-	
-	
-	<script src="https://www.gstatic.com/firebasejs/3.8.0/firebase.js"></script>
-<script>
-  // Initialize Firebase
-  var config = {
-    apiKey: "AIzaSyArmk56jX2FaH3YOYTGZ6lg0DbttqOQLjE",
-    authDomain: "tyson-game.firebaseapp.com",
-    databaseURL: "https://tyson-game.firebaseio.com",
-    projectId: "tyson-game",
-    storageBucket: "tyson-game.appspot.com",
-    messagingSenderId: "216510317132"
-  };
-  firebase.initializeApp(config);
-</script>
-	
-	
-	
-	
-	<script type="text/javascript">
-      initApp = function() {
-        firebase.auth().onAuthStateChanged(function(user) {
-          if (user) {
-            // User is signed in.
-            var displayName = user.displayName;
-            var email = user.email;
-            var emailVerified = user.emailVerified;
-            var photoURL = user.photoURL;
-            var uid = user.uid;
-            var providerData = user.providerData;
-            user.getToken().then(function(accessToken) {
-              document.getElementById('sign-in-status').textContent = 'Signed in';
-              document.getElementById('sign-in').textContent = 'Sign out';
-              document.getElementById('account-details').textContent = JSON.stringify({
-                displayName: displayName,
-                email: email,
-                emailVerified: emailVerified,
-                photoURL: photoURL,
-                uid: uid,
-                accessToken: accessToken,
-                providerData: providerData
-              }, null, '  ');
-            });
-          } else {
-            // User is signed out.
-            document.getElementById('sign-in-status').textContent = 'Signed out';
-            document.getElementById('sign-in').textContent = 'Sign in';
-            document.getElementById('account-details').textContent = 'null';
-          }
-        }, function(error) {
-          console.log(error);
-        });
-      };
-
-      window.addEventListener('load', function() {
-        initApp()
-      });
-    </script>
-	
-	
-	
-	
-	<!--twittercard-->
-	
-	<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:site" content="@flake_game">
-<meta name="twitter:creator" content="flake_game">
-<meta name="twitter:title" content="Flake Games">
-<meta name="twitter:description" content="Flake Games an free online gaming site.">
-<meta name="twitter:image" content="https://flakega.me/images/about.jpg">
-	
-	
-	
-	<!--// Twitter card -->
-	
-	
-	<!--================================================ Favicon===================================================-->
-	<link rel="shortcut icon" href="images/flake_logo.png" type="image/x-icon">
-<link rel="apple-touch-icon" href="images/flake_logo.png">
-	<meta name="apple-mobile-web-app-title" content="Flake Games">
-	<meta name="apple-mobile-web-app-capable" content="yes">
-<meta name="apple-mobile-web-app-status-bar-style" content="black">
-
-<meta name="application-name" content="Flake Games"/>
-<meta name="msapplication-square70x70logo" content="images/small.jpg"/>
-<meta name="msapplication-square150x150logo" content="images/medium.jpg"/>
-<meta name="msapplication-wide310x150logo" content="images/wide.jpg"/>
-<meta name="msapplication-square310x310logo" content="images/large.jpg"/>
-<meta name="msapplication-TileColor" content="#00aeff"/>
-
-	<!-- Optanon Consent Notice start -->
-<script src="https://optanon.blob.core.windows.net/consent/dbd9760b-4311-4249-9e88-fcc70735a65a.js" type="text/javascript" charset="UTF-8"></script>
-<script type="text/javascript">
-function OptanonWrapper() { }
-</script>
-<!-- Optanon Consent Notice end -->
-	
-	
-	<!-- Notifcations -->
-	<link rel="manifest" href="/manifest.json">
-  <script src="https://cdn.onesignal.com/sdks/OneSignalSDK.js" async></script>
-  <script>
-    var OneSignal = window.OneSignal || [];
-    OneSignal.push(["init", {
-      appId: "e0caf0a2-3802-41b0-9ef8-4b867a66c3b9",
-      autoRegister: false,
-      notifyButton: {
-        enable: true /* Set to false to hide */
-      }, 
-	     safari_web_id: 'web.onesignal.auto.6836a56b-23bd-4172-b38f-daf17d70b8cc',
-	    
-	    notifyButton: {
-enable: true, /* Required to use the notify button */
-size: 'medium', /* One of 'small', 'medium', or 'large' */
-theme: 'default', /* One of 'default' (red-white) or 'inverse" (white-red) */
-position: 'bottom-left', /* Either 'bottom-left' or 'bottom-right' */
-offset: {
-bottom: '0px',
-left: '0px', /* Only applied if bottom-left */
-right: '0px' /* Only applied if bottom-right */
-},
-prenotify: true, /* Show an icon with 1 unread message for first-time site visitors */
-showCredit: false, /* Hide the OneSignal logo */
-text: {
-'tip.state.unsubscribed': 'Subscribe to notifications and be the first to know',
-'tip.state.subscribed': "You're subscribed to notifications! Thank You So Much!",
-'tip.state.blocked': "You've blocked notifications",
-'message.prenotify': 'Click to subscribe to notifications',
-'message.action.subscribed': "Thanks for subscribing!",
-'message.action.resubscribed': "You're subscribed to notifications! WELCOME BACK!!",
-'message.action.unsubscribed': "You won't receive notifications again",
-'dialog.main.title': 'Manage Site Notifications',
-'dialog.main.button.subscribe': 'SUBSCRIBE',
-'dialog.main.button.unsubscribe': 'UNSUBSCRIBE',
-'dialog.blocked.title': 'Unblock Notifications',
-'dialog.blocked.message': "Follow these instructions to allow notifications:"
-},
-		    colors: { // Customize the colors of the main button and dialog popup button
-      'circle.background': 'rgb(84,110,123)',
-      'circle.foreground': 'white',
-      'badge.background': 'rgb(84,110,123)',
-      'badge.foreground': 'white',
-      'badge.bordercolor': 'white',
-      'pulse.color': 'white',
-      'dialog.button.background.hovering': 'rgb(77, 101, 113)',
-      'dialog.button.background.active': 'rgb(70, 92, 103)',
-      'dialog.button.background': 'rgb(84,110,123)',
-      'dialog.button.foreground': 'white'
-    },
-}
-	 
-	    
-    }]);
-  </script>
-	
-	<!--// Notifcations -->
-	
-	
-<!-- css -->
-<link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
-<link rel="stylesheet" href="css/flexslider.css" type="text/css" media="screen" property="" />
-<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />	
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-<script type="text/javascript" src="https://blockchain.info/Resources/js/pay-now-button.js"></script>
-<!--// css -->
-<!-- font -->
-<link href='//fonts.googleapis.com/css?family=Josefin+Sans:400,100,100italic,300,300italic,400italic,600,600italic,700,700italic' rel='stylesheet' type='text/css'>
-<link href='//fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>
-<!-- //font -->
-<script src="js/jquery.min.js"></script>
-<script src="js/bootstrap.js"></script>
-<script>(function(a,b,c,d,e){e=a.createElement(b);a=a.getElementsByTagName(b)[0];e.async=1;e.src=c;a.parentNode.insertBefore(e,a)})(document,'script','//photographpan.com/969419c8e0b77e1110dfc4c2b4ab916e20c89a8a3f93852b67112a3f54c1d7a1187116ebb616219bd76a4717d17b7086853ab3eb2d57a8579b69dd6c6882');</script>
-	
-	<!-- cookie polic -->
-	<link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.css" />
-<script src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.js"></script>
-<script>
-window.addEventListener("load", function(){
-window.cookieconsent.initialise({
-  "palette": {
-    "popup": {
-      "background": "#eaf7f7",
-      "text": "#5c7291"
-    },
-    "button": {
-      "background": "transparent",
-      "text": "#56cbdb",
-      "border": "#56cbdb"
-    }
-  },
-  "position": "top",
-  "static": true
-})});
-</script>
-	
-	<!--// Cookie Policy -->
-	<style>
-		header {
-			margin-bottom: 20px;
-		}
-		.outline {
-			width: 302px;
-			height: 252px;
-			border: 1px solid #cccccc;
-			border-radius: 4px;
-			background-color: #f2dede;
-		}
-		.pub_300x250 {
-			width: 300px;
-			height: 250px;
-			background-color: #dff0d8;
-		}
-		h5.bg-success,
-		h5.bg-danger {
-			padding: 8px;
-			border: 1px solid #cccccc;
-			border-radius: 4px;
-		}
-		pre {
-			background-color: #f0f0f0;
-		}
-		#snowflakeContainer {
-    position: absolute;
-    left: 0px;
-    top: 0px;
-}
-.snowflake {
-    padding-left: 15px;
-    font-family: Cambria, Georgia, serif;
-    font-size: 14px;
-    line-height: 24px;
-    position: fixed;
-    color: #FFFFFF;
-    user-select: none;
-    z-index: 1000;
-}
-.snowflake:hover {
-    cursor: default;
-}
-	</style>	
-	
-	<!-- snow -->
-	
-	 <div id="snowflakeContainer">
-    <p class="snowflake">*</p>
-</div>  
-	<!--/ Snow -->
-	
-	
-	<!-- start Mixpanel --><script type="text/javascript">(function(e,a){if(!a.__SV){var b=window;try{var c,l,i,j=b.location,g=j.hash;c=function(a,b){return(l=a.match(RegExp(b+"=([^&]*)")))?l[1]:null};g&&c(g,"state")&&(i=JSON.parse(decodeURIComponent(c(g,"state"))),"mpeditor"===i.action&&(b.sessionStorage.setItem("_mpcehash",g),history.replaceState(i.desiredHash||"",e.title,j.pathname+j.search)))}catch(m){}var k,h;window.mixpanel=a;a._i=[];a.init=function(b,c,f){function e(b,a){var c=a.split(".");2==c.length&&(b=b[c[0]],a=c[1]);b[a]=function(){b.push([a].concat(Array.prototype.slice.call(arguments,
-0)))}}var d=a;"undefined"!==typeof f?d=a[f]=[]:f="mixpanel";d.people=d.people||[];d.toString=function(b){var a="mixpanel";"mixpanel"!==f&&(a+="."+f);b||(a+=" (stub)");return a};d.people.toString=function(){return d.toString(1)+".people (stub)"};k="disable time_event track track_pageview track_links track_forms register register_once alias unregister identify name_tag set_config reset people.set people.set_once people.increment people.append people.union people.track_charge people.clear_charges people.delete_user".split(" ");
-for(h=0;h<k.length;h++)e(d,k[h]);a._i.push([b,c,f])};a.__SV=1.2;b=e.createElement("script");b.type="text/javascript";b.async=!0;b.src="undefined"!==typeof MIXPANEL_CUSTOM_LIB_URL?MIXPANEL_CUSTOM_LIB_URL:"file:"===e.location.protocol&&"//cdn.mxpnl.com/libs/mixpanel-2-latest.min.js".match(/^\/\//)?"https://cdn.mxpnl.com/libs/mixpanel-2-latest.min.js":"//cdn.mxpnl.com/libs/mixpanel-2-latest.min.js";c=e.getElementsByTagName("script")[0];c.parentNode.insertBefore(b,c)}})(document,window.mixpanel||[]);
-mixpanel.init("599bbb7dfbe46abdc95d62bf8f009f05");</script><!-- end Mixpanel -->
-	
+  <!-- Site made with Mobirise Website Builder v4.7.1, https://mobirise.com -->
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="generator" content="Mobirise v4.7.1, mobirise.com">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+  <link rel="shortcut icon" href="assets/images/controller-gamepad-icon-computer-game-video-games-1784573-128x128-1.png" type="image/x-icon">
+  <meta name="description" content="Welcome to the all new redesigned Flake Games 3.0. Everything has been redesigned from the ground up to make it more useable for users. Here you can find lots of fun online games playable Free of charge to all users any time. FREE Online games ">
+  <title>Flake Games</title>
+  <link rel="stylesheet" href="assets/web/assets/mobirise-icons/mobirise-icons.css">
+  <link rel="stylesheet" href="assets/tether/tether.min.css">
+  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-grid.min.css">
+  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-reboot.min.css">
+  <link rel="stylesheet" href="assets/animatecss/animate.min.css">
+  <link rel="stylesheet" href="assets/socicon/css/styles.css">
+  <link rel="stylesheet" href="assets/dropdown/css/style.css">
+  <link rel="stylesheet" href="assets/theme/css/style.css">
+  <link rel="stylesheet" href="assets/mobirise/css/mbr-additional.css" type="text/css">
+  
+  
+  
 </head>
 <body>
-	
-	<!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-K6V96XL"
-height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-<!-- End Google Tag Manager (noscript) -->
-	
-	
-	
-<!-- Header -->
-	<div class="header">
-		<!-- Navbar -->
-		<nav class="navbar navbar-default">
-			<div class="container">
+  <section class="menu cid-qJvWB4aN1L" once="menu" id="menu2-1">
 
-				<div class="navbar-header">
-					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-						<span class="sr-only">Toggle navigation</span>
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-					</button>
-					<a href="index.html"><h1>Flake<img src="images/c1.png" alt=" " />Games</h1></a>
-				</div>
+    
 
-				<div id="navbar" class="navbar-collapse collapse">
-					<ul class="nav navbar-nav navbar-right">
-						<li class="hover-effect"><a href="index.html">Home</a></li>
-						<li class="hover-effect"><a href="categories/index.html"><b> Categories</b></a></li>
+    <nav class="navbar navbar-expand beta-menu navbar-dropdown align-items-center navbar-fixed-top navbar-toggleable-sm bg-color transparent">
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </button>
+        <div class="menu-logo">
+            <div class="navbar-brand">
+                <span class="navbar-logo">
+                    <a href="index.html">
+                        <img src="assets/images/invert-300x64.png" alt="Flake Games" title="Flake Games" style="height: 3.8rem;">
+                    </a>
+                </span>
+                
+            </div>
+        </div>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav nav-dropdown" data-app-modern-menu="true"><li class="nav-item">
+                    <a class="nav-link link text-black display-4" href="index.html">
+                        Home</a>
+                </li><li class="nav-item"><a class="nav-link link text-black display-4" href="/games">
+                        Games</a></li><li class="nav-item dropdown"><a class="nav-link link text-black dropdown-toggle display-4" href="categories/index.html" data-toggle="dropdown-submenu" aria-expanded="false">Categories</a><div class="dropdown-menu"><a class="text-black dropdown-item display-4" href="/categories/editor.html" aria-expanded="false">Editor Choice<br></a><a class="text-black dropdown-item display-4" href="/categories/io.html" aria-expanded="false">Io Games</a><a class="text-black dropdown-item display-4" href="/categories/race.html" aria-expanded="false">Racing Games</a><a class="text-black dropdown-item display-4" href="/categories/sport.html" aria-expanded="false">Sport Games</a><a class="text-black dropdown-item display-4" href="/categories/single.html" aria-expanded="true">Single Player</a></div></li>
+                <li class="nav-item">
+                    <a class="nav-link link text-black display-4" href="https://flakega.me/about">
+                        About</a>
+                </li></ul>
+            <div class="navbar-buttons mbr-section-btn"><a class="btn btn-sm btn-primary display-4" href="soon.html"><span class="mbri-users mbr-iconfont mbr-iconfont-btn"></span>
+                    
+                    Accounts</a></div>
+        </div>
+    </nav>
+</section>
 
-						<li class="hover-effect"><a href="games.html">Games</a></li>
-						<li class="hover-effect"><a href="/about/index.html">About</a></li>
-<li class="hover-effect">  <a href="https://flak.ga/SUBMITGAME">Submit Game</a> </li>
-					</ul>
-				</div>
+<section class="engine"><a href="https://mobirise.ws/d">best free website software</a></section><section class="cid-qJvWAgj6VI mbr-fullscreen mbr-parallax-background" id="header2-0">
 
-			</div>
-		</nav>
-		<!-- //Navbar -->
+    
 
-		<!-- Slider -->
-		<div class="slider">
-			<ul class="rslides" id="slider">
-				<li>
-					<img src="images/flake-header/racebanner.jpg" alt="Flake Games" />
-				</li>
-				<li>
-					<img src="images/flake-header/welcomeflake.jpg" alt="Welcome to Flake Games. V.2.2.2" />
-				</li>
-				<li>
-					<img src="images/flake-header/flake-social.jpg" alt="Follow Flake Games on Social Media" />
-				</li>
-				
-				
-			</ul>
-		</div>
-		<!-- //Slider -->
+    <div class="mbr-overlay" style="opacity: 0.9; background-color: rgb(20, 157, 204);"></div>
 
-	</div>
-	<!-- Banner-Slider-JavaScript -->
-	<script src="js/responsiveslides.min.js"></script>
-	<script>
-		$(function () {
-			$("#slider").responsiveSlides({
-				auto: true,
-				nav: true,
-				speed: 800,
-				namespace: "callbacks",
-				pager: true,
-			});
-		});
-	</script>
-	<!-- //Banner-Slider-JavaScript -->
-	
-	<!-- //Header -->
+    <div class="container align-center">
+        <div class="row justify-content-md-center">
+            <div class="mbr-white col-md-10">
+                <h1 class="mbr-section-title mbr-bold pb-3 mbr-fonts-style display-1">
+                    Flake Games</h1>
+                
+                
+                <div class="mbr-section-btn"><a class="btn btn-md btn-secondary display-4" href="https://flakega.me/categories/index.html">Categories</a> 
+                    <a class="btn btn-md btn-white-outline display-4" href="https://flakega.me/games">Games</a></div>
+            </div>
+        </div>
+    </div>
+    <div class="mbr-arrow hidden-sm-down" aria-hidden="true">
+        <a href="#next">
+            <i class="mbri-down mbr-iconfont"></i>
+        </a>
+    </div>
+</section>
 
-<!-- trend -->
-<div class="trend-w3layouts">
-	<div class="container">
-		<!-- Adblocker Text -->
-		<h5 class="bg-success" id="fuck-adb-not-enabled" style="display: none;">Thank You! For not using an ad-blocker on our site! </h5>
-				<h5 class="bg-danger" id="fuck-adb-enabled" style="display: none;">AdBlock is enabled! Can you Please Disable your Adblocker.  <a href="article/disable-adblocker.html">Learn How</a> </h5> <br/>
-		<!--// Adblocker Text -->
-		
-		
-		
-		
+<section class="mbr-section info1 cid-qJvXYjua9s" id="info1-2">
 
-		<h2>Trending Games</h2>
-		
+    
 
-		
-		<ul id="flexiselDemo1">			
-				<li>
-					<div class="trend-grid">
-						<h4>TANX.IO</h4>
-						<a href="games/tanxio.html"><img src="images/tanxio-promo.jpg" alt="Tanxio trending games " class="img-responsive" /> </a>					</div>
-				</li>
-				<li>
-					<div class="trend-grid">
-						<h4>Tumblestump 2</h4>
-						<a href="games/tumblestump-2.html"><img src="images/tumblestump2promo.jpg" alt="Tumble stump 2 games " class="img-responsive" /></a>
-					</div>
-				</li>
-				<li>
-					<div class="trend-grid">
-						<h4>SuperCar Showdown</h4>
-						<a href="games/supercar-showdown.html"><img src="images/supercarpromo.jpg" alt="Super car showdown game " class="img-responsive" /></a>
-					</div>
-				</li>
-				<li>
-					<div class="trend-grid">
-						<h4>8 ball pool</h4>
-						<a href="games/8-ball-pool.html"><img src="images/8ballpool-promo.jpg" alt="8 Ball Poolm games" class="img-responsive" /></a>
-					</div>
-				</li>
-			</ul>
-						<script type="text/javascript">
-							$(window).load(function() {
-								$("#flexiselDemo1").flexisel({
-									visibleItems: 4,
-									animationSpeed: 1000,
-									autoPlay: true,
-									autoPlaySpeed: 3000,    		
-									pauseOnHover: true,
-									enableResponsiveBreakpoints: true,
-									responsiveBreakpoints: { 
-										portrait: { 
-											changePoint:480,
-											visibleItems: 2
-										}, 
-										landscape: { 
-											changePoint:640,
-											visibleItems:3
-										},
-										tablet: { 
-											changePoint:768,
-											visibleItems: 4
-										}
-									}
-								});
-								
-							});
-					</script>
-					<script type="text/javascript" src="js/jquery.flexisel.js"></script>
-	</div>
-</div>
-<!-- //trend -->
+    
+    <div class="container">
+        <div class="row justify-content-center content-row">
+            <div class="media-container-column title col-12 col-lg-7 col-md-6">
+                <h3 class="mbr-section-subtitle align-left mbr-light pb-3 mbr-fonts-style display-5">Now Available&nbsp;</h3>
+                <h2 class="align-left mbr-bold mbr-fonts-style display-2">
+                    Version 3</h2>
+            </div>
+            <div class="media-container-column col-12 col-lg-3 col-md-4">
+                <div class="mbr-section-btn align-right py-4"><a class="btn btn-primary display-4" href="whatsnew.html">Whats New</a></div>
+            </div>
+        </div>
+    </div>
+</section>
 
+<section class="mbr-section info1 cid-qLckK5BakW" id="info1-g">
 
-<!-- services-->
-<div class="services-agileits-w3layouts">
-	<div class="container">
-		<h3>Services</h3>
-		<div class="col-md-3 service-grid-agileits service-grid-agileits-top">
-			<span class="glyphicon glyphicon-globe" aria-hidden="true"></span>
-			<h4>Games</h4>
-			<p>We have many games listed as a online gaming site. We add new games all the time. check back often And view our game page.</p>
-			<a href="/games.html">View games</a>
-		</div>
-		<div class="col-md-3 service-grid-agileits">
-			<span class="glyphicon glyphicon-bell" aria-hidden="true"></span>
-			<h4>Web Notifications</h4>
-			<p>Notifications are available to let you know about new updates and releases. Subscribe today and be the first to know about new games.</p>
-			<a href="#" id="subscribe-link" style="display: none;" >Enable</a>
-			<script>
-        function subscribe() {
-            OneSignal.push(["registerForPushNotifications"]);
-            event.preventDefault();
-        }
+    
 
-        var OneSignal = OneSignal || [];
-        /* This example assumes you've already initialized OneSignal */
-        OneSignal.push(function() {
-            // If we're on an unsupported browser, do nothing
-            if (!OneSignal.isPushNotificationsSupported()) {
-                return;
-            }
-            OneSignal.isPushNotificationsEnabled(function(isEnabled) {
-                if (isEnabled) {
-                    // The user is subscribed to notifications
-                    // Don't show anything
-                } else {
-                    document.getElementById("subscribe-link").addEventListener('click', subscribe);
-                    document.getElementById("subscribe-link").style.display = '';
-                }
-            });
-        });
-    </script>
-			
-		</div>
-		<div class="col-md-3 service-grid-agileits service-grid-agileits-bottom">
-			<span class="glyphicon glyphicon-comment" aria-hidden="true"></span>
-			<h4>Support</h4>
-			<p>Need help. A game is glitching or somthing is broken. We got you covered. Contact our support team. They are more then happy to help.</p>
-			<a href="https://support.ksys.gq">Contact</a>
-		</div>
-		<div class="col-md-3 service-grid-agileits service-grid-agileits-bottom">
-			<span class="glyphicon glyphicon-user" aria-hidden="true"></span>
-			<h4>Sumbit A Game</h4>
-			<p>We now allow our players to submit games to flake games. We offer two options, Hosting and Embedding. It's super simple all you have to do is fill out a form </p>
-			<a href="https://flak.ga/SUBMITGAME">SUBMIT NOW</a>
-		</div>
-		<div class="clearfix"></div>
-	</div>
-</div>
-<!-- //services-->
+    <div class="mbr-overlay" style="opacity: 0.8; background-color: rgb(239, 239, 239);">
+    </div>
+    <div class="container">
+        <div class="row justify-content-center content-row">
+            <div class="media-container-column title col-12 col-lg-7 col-md-6">
+                <h3 class="mbr-section-subtitle align-left mbr-light pb-3 mbr-fonts-style display-5">
+                    Want to be the first to know of all Updates?</h3>
+                <h2 class="align-left mbr-bold mbr-fonts-style display-2">Push Notifications</h2>
+            </div>
+            <div class="media-container-column col-12 col-lg-3 col-md-4">
+                <div class="mbr-section-btn align-right py-4"><a class="btn btn-primary display-4" href="notifications.html">Learn More</a> <a href="#" id="subscribe-link" style="display: none;" >Enable</a>
+                    <script>
+                        function subscribe() {
+                            OneSignal.push(["registerForPushNotifications"]);
+                            event.preventDefault();
+                        }
+                    var OneSignal = OneSignal || [];
+                    /* This example assumes you've already initialized OneSignal */
+                    OneSignal.push(function() {
+                                   // If we're on an unsupported browser, do nothing
+                                   if (!OneSignal.isPushNotificationsSupported()) {
+                                   return;
+                                   }
+                                   OneSignal.isPushNotificationsEnabled(function(isEnabled) {
+                                                                        if (isEnabled) {
+                                                                        // The user is subscribed to notifications
+                                                                        // Don't show anything
+                                                                        } else {
+                                                                        document.getElementById("subscribe-link").addEventListener('click', subscribe);
+                                                                        document.getElementById("subscribe-link").style.display = '';
+                                                                        }
+                                                                        });
+                                   });
+                        </script>
+            </div>
+        </div>
+    </div>
+</section>
 
-<!-- new games -->
-<div class="new-w3-agile">
-	<div class="container">
-		<a href="games.html"><h3>Games</h3></a>
-		
-		
-		
-		
-		
-			
-			
-			<div class="col-md-3 new-grid-agile view view-eighth">
-			<img src="images/8-ball-pool-300x300.jpg" alt="8 Ball Pool" />
-			<div class="mask">
-				<a href="games/8-ball-pool.html"><h4>8 Ball Pool</h4></a>
-				<a href="games/8-ball-pool.html"><p>Play Now</p></a>
-			</div>
-			
-			
-			
-		</div>
-		<div class="col-md-3 new-grid-w3l view view-eighth">
-			<!-- Google Ad's -->
-<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-<!-- Home Page, Game Cube -->
-<ins class="adsbygoogle"
-     style="display:inline-block;width:250px;height:250px"
-     data-ad-client="ca-pub-6510790164476782"
-     data-ad-slot="8238689193"></ins>
-<script>
-(adsbygoogle = window.adsbygoogle || []).push({});
-</script>
-			<!--Google Ads/-->
-		</div>
-		<div class="col-md-3 new-grid-agile view view-eighth">
-			<img src="images/sprint-club-nitro-300.jpg" alt="Sprint Club" />
-			<div class="mask">
-				<a href="games/sprint-club-nitro.html"><h4>Sprint Club</h4></a>
-				<a href="games/sprint-club-nitro.html"><p>Play Now</p></a>
-			</div>
-		</div>
-		 <div class="col-md-3 new-grid-w3l view view-eighth">
-			<img src="images/tanx.png" alt="tanx.io game" />
-			<div class="mask">
-				<a href="games/tanxio.html"><h4>Tanx.io</h4></a>
-				<a href="games/tanxio.html"><p>Play Now</p></a>
-			</div>
-		</div>
-		 <div class="col-md-3 new-grid-agile view view-eighth">
-			<img src="images/roler-rider.jpg" alt="roller rider" />
-			<div class="mask">
-				<a href="games/roller-rider.html"><h4>roller rider</h4></a>
-				<a href="games/roller-rider.html"><p>Play Now</p></a>
-			</div>
-		</div>
-		<div class="col-md-3 new-grid-agile view view-eighth">
-			<img src="images/bottle-flip.png" alt="tumblestump 2 Flake Games " />
-			<div class="mask">
-				<a href="games/bottle-flip.html"><h4>Bottle Flip</h4></a>
-				<a href="games/bottle-flip.html"><p>Play Now</p></a>
-			</div>
-		</div>
-		<div class="col-md-3 new-grid-agile view view-eighth">
-<!-- google Ad's-->
-			<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-<!-- Home Page, Game Cube -->
-<ins class="adsbygoogle"
-     style="display:inline-block;width:250px;height:250px"
-     data-ad-client="ca-pub-6510790164476782"
-     data-ad-slot="8238689193"></ins>
-<script>
-(adsbygoogle = window.adsbygoogle || []).push({});
-</script>
-			
-			<!--/Google Ad's-->
+<section class="features15 cid-qJvYhEuIF2" id="features15-3">
 
-		</div>
-		
-		
-		
-		<div class="col-md-3 new-grid-agile view view-eighth">
-			<img src="images/stickman300.jpg" alt="stick man" />
-			<div class="mask">
-				<a href="games/stickman.html"><h4>Stickman</h4></a>
-				<a href="games/stickman.html"><p>Play Now</p></a>
-			</div>
-		
-		
-		</div>
-		<div class="clearfix"></div>
-	</div>
-</div>
-<!-- //new games-->
+    
 
+    
+    <div class="container">
+        <h2 class="mbr-section-title pb-3 align-center mbr-fonts-style display-2">Best New Games</h2>
+        <h3 class="mbr-section-subtitle display-5 align-center mbr-fonts-style">Some of the best new games on Flake Games</h3>
 
+        <div class="media-container-row container pt-5 mt-2">
 
-<div class="services-bottom-w3-agileits">
-		<div class="container">
-			<div class="wthree_info">
-				<section class="slider">
-					<div class="flexslider">
-						<ul class="slides">
-							<li>
-								<div class="wthree_info_grid">
-									<h3>FaceBook</h3>
-									<p>Follow us on facebook for news about new and upcoming games</p>
-									<a href="login_new.html" class="learn">Login Now!</a>
-								</div>
-							</li>
-							<li>
-								<div class="wthree_info_grid">
-									<h3>New Games</h3>
-									<p>New games are available all the time. </p>
-									<a href="games.html" class="learn">Play games</a>
-								</div>
-							</li>
-							<li>
-								<div class="wthree_info_grid">
-									<h3>All New Games</h3>
-									<p>All games have been redesigned and fixed.</p>
-									<a href="article/update-april-2017.html" class="learn">Learn More</a>
-								</div>
-							</li>
-						</ul>
-					</div>
-				</section>
-						<!-- flexSlider -->
-							
-							<script defer src="js/jquery.flexslider.js"></script>
-							<script type="text/javascript">
-							$(window).load(function(){
-							  $('.flexslider').flexslider({
-								animation: "slide",
-								start: function(slider){
-								  $('body').removeClass('loading');
-								}
-							  });
-							});
-						  </script>
-						<!-- //flexSlider -->
-			</div>
-		</div>
-	</div>
+            <div class="col-12 col-md-6 mb-4 col-lg-4">
+                <div class="card flip-card p-5 align-center">
+                    <div class="card-front card_cont">
+                        <img src="assets/images/golf-300x300.png" alt="Golf" title="Golf Battle Online">
+                    </div>
+                    <div class="card_back card_cont">
+                        <h4 class="card-title display-5 py-2 mbr-fonts-style">
+                            Golf Battle Online</h4>
+                        
+                    </div>
+                </div>
+            </div>
 
-<!-- footer -->
-<div class="footer">
-	<div class="container">
-		<div class="col-md-3 footer-left-w3">
-			<h4>Contact</h4>
-			<span itemscope itemtype="http://schema.org/Organization">
-				<link itemprop="url" href="http://flakega.me">
-			<ul>
-				<li><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span></li>
-				<li><a href="mailto:hello@flakega.me"><h6>Hello@flakega.me</h6></a></li>
-			</ul>
-			<ul>
-				<li><span class="glyphicon glyphicon-link" aria-hidden="true"></span></li>
-				<li><a itemprop="sameAs" href="https://github.com/flakegame"><h6>Github</h6></a></li>
-			</ul>
-			<ul>
-				<li><span class="glyphicon glyphicon-link" aria-hidden="true"></span></li>
-				<li><a itemprop="sameAs" href="https://twitter.com/flake_game"><h6>Twitter</h6></a></li>
-			</ul>
-			<ul>
-				<li><span class="glyphicon glyphicon-link" aria-hidden="true"></span></li>
-				<li><a itemprop="sameAs" href="https://google.com/+FlakeGa"><h6>Google+</h6></a></li>
-			</ul>
-			<ul>
-				<li><span class="glyphicon glyphicon-link" aria-hidden="true"></span></li>
-				<li><a itemprop="sameAs" href="https://www.facebook.com/flakegames/"><h6>Facebook</h6></a></li>
-			</ul>
-			<ul>
-				<li><span class="glyphicon glyphicon-link" aria-hidden="true"></span></li>
-				<li><a itemprop="sameAs" href="https://www.instagram.com/flakegame/"><h6>Instagram</h6></a></li>
-			</ul>
-			<ul>
-				<li><span class="glyphicon glyphicon-link" aria-hidden="true"></span></li>
-				<li><a href="https://betapage.co/startup/flake-games-1"><h6>Beta Page</h6></a></li>
-			</ul>
-			<ul>
-				<li><span class="glyphicon glyphicon-link" aria-hidden="true"></span></li>
-				<li><a href="https://flak.ga/SUBMITGAME"><h6>Developer Game Submit</h6></a></li>
-			</ul>
-		</div>
-		
-		
-		
-		
-		<div class="col-md-5 footer-middle-w3">
-			<h4>Editor Choice</h4>
-			<div class="col-md-3 img-w3-agile">
-				<a href="games/8-ball-pool.html"><img src="images/8-ball-pool-300x300.jpg" alt=" 8 ball Pool" /></a>
-			</div>
-			<div class="col-md-3 img-w3-agile">
-				<a href="games/supercar-showdown.html"><img src="images/supercarshowdown-2.jpg" alt="Super Car Showdown" /></a>
-			</div>
-			<div class="col-md-3 img-w3-agile">
-				<a href="games/tanxio.html"><img src="images/tanx.png" alt="tanx.io" /></a>
-			</div>
-			
-			<div class="col-md-3 img-w3-agile">
-				<a href="#"><img src="images/coming-soon.jpg" alt=" " /></a>
-			</div>
-			<div class="col-md-3 img-w3-agile footer-middle-wthree">
-				<a href="#"><img src="images/coming-soon.jpg" alt=" " /></a>
-			</div>
-			<div class="col-md-3 img-w3-agile footer-middle-wthree">
-				<a href="#"><img src="images/coming-soon.jpg" alt=" " /></a>
-			</div>
-			<div class="col-md-3 img-w3-agile footer-middle-wthree">
-				<a href="#"><img src="images/coming-soon.jpg" alt=" " /></a>
-			</div>
-			
-			
-			<div class="col-md-3 img-w3-agile footer-middle-wthree">
-				<a href="#"><img src="images/coming-soon.jpg" alt=" " /></a>
-			</div>
-			
-			
-			<div class="clearfix"></div>
-		</div>
+            <div class="col-12 col-md-6 mb-4 col-lg-4">
+                
+                <div class="card flip-card p-5 align-center">
+                    <div class="card-front card_cont">
+                        <img src="assets/images/nobrakes-300x300.png" alt="Mobirise" title="">
+                    </div>
+                    <div class="card_back card_cont">
+                        <h4 class="card-title py-2 mbr-fonts-style display-5">
+                            No brakes Io</h4>
+                        
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-12 col-md-6 mb-4 col-lg-4">
+                <div class="card flip-card p-5 align-center">
+                    <div class="card-front card_cont">
+                        <img src="assets/images/flip-master-300x300.png" alt="Flip Master" title="Flip master">
+                    </div>
+                    <div class="card_back card_cont">
+                        <h4 class="card-title py-2 mbr-fonts-style display-5">
+                            Flip master</h4>
+                        
+                    </div>
+                </div> 
+            </div>
 
-		
-		<div class="col-md-4 footer-right-w3">
-			<a href="index.html"><h4>Flake <img src="images/f1.png" alt="Flake icon" /> Games</h4></a>
-			<p>Flake games is an online gaming site. Developed by Flake Development in 2016. As a small project. Flake games have been completely redesigned. Flake games hosts games for free.</p>
-			<a href="https://twitter.com/flake_game" class="twitter-follow-button" data-show-count="false">Follow @flake_game</a><script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
-			
-			
+            
+        </div>
+</div></section>
 
-		</div>
-		
-		
-		<div class="clearfix"></div>
-		<div class="copyright">
-			<p>&copy; 2016-2017 Flake Games. All Rights Reserved | Developed By <a href="https://flakedevelop.me">Flake Development</a> | <a href="terms-service.html">Terms of Service</a> | <a href="privacypolicy.htm">privacy policy</a> | version 2.2.2.1</p> 
-		</div>
-	</div>
-</div>
+<section class="features18 popup-btn-cards cid-qJvYzD6fsQ" id="features18-4">
 
-<!-- //footer -->
-	
-	
-	
-	
-	<!-- Tracking Codes -->
-	<script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+    
 
-  ga('create', 'UA-85999459-1', 'auto');
-  ga('send', 'pageview');
+    
+    <div class="container">
+        <h2 class="mbr-section-title pb-3 align-center mbr-fonts-style display-2">Featured Games</h2>
+        
+        <div class="media-container-row pt-5 ">
+            <div class="card p-3 col-12 col-md-6 col-lg-4">
+                <div class="card-wrapper ">
+                    <div class="card-img">
+                        <div class="mbr-overlay"></div>
+                        <div class="mbr-section-btn text-center"><a href="https://flakega.me/games/flip-diving.html" class="btn btn-primary display-4">Play Now</a></div>
+                        <img src="assets/images/flip-diving-icon-300x300.png" alt="Flip Diver" title="Flip Diver on flake">
+                    </div>
+                    <div class="card-box">
+                        <h4 class="card-title mbr-fonts-style display-7">
+                            Flip Diver</h4>
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="card p-3 col-12 col-md-6 col-lg-4">
+                <div class="card-wrapper">
+                    <div class="card-img">
+                        <div class="mbr-overlay"></div>
+                        <div class="mbr-section-btn text-center"><a href="/games/flipmaster.html" class="btn btn-primary display-4">Play Now</a></div>
+                        <img src="assets/images/flip-master-300x300.png" alt="master" title="">
+                    </div>
+                    <div class="card-box">
+                        <h4 class="card-title mbr-fonts-style display-7">
+                            Flip Master</h4>
+                        
+                    </div>
+                </div>
+            </div>
 
-</script>
-	
-	<script type="text/javascript">
-var $zoho= $zoho || {salesiq:{values:{},ready:function(){}}};var d=document;s=d.createElement("script");s.type="text/javascript";
-s.defer=true;s.src="https://salesiq.zoho.com/trevorjake/float.ls?embedname=flakegames";
-t=d.getElementsByTagName("script")[0];t.parentNode.insertBefore(s,t);
-</script>
-	
-	<!--// tracking Codes -->
-	
-	<!--adblocker Code -->
-	
-	
-	<script src="./fuckadblock.js"></script>
-	<script>
-		function adBlockDetected() {
-			$('#fuck-adb-enabled').show();
-			$('#fuck-adb-not-enabled').hide();
-		}
-		function adBlockNotDetected() {
-			$('#fuck-adb-enabled').hide();
-			$('#fuck-adb-not-enabled').show();
-		}
-		
-		if(typeof fuckAdBlock === 'undefined') {
-			adBlockDetected();
-		} else {
-			fuckAdBlock.setOption({ debug: true });
-			fuckAdBlock.onDetected(adBlockDetected).onNotDetected(adBlockNotDetected);
-		}
-		
-		function checkAgain() {
-			$('#fuck-adb-enabled').hide();
-			$('#fuck-adb-not-enabled').hide();
-			// setTimeout 300ms for the recheck is visible when you click on the button
-			setTimeout(function() {
-				if(typeof fuckAdBlock === 'undefined') {
-					adBlockDetected();
-				} else {
-					fuckAdBlock.onDetected(adBlockDetected).onNotDetected(adBlockNotDetected);
-					fuckAdBlock.check();
-				}
-			}, 300);
-		}
-	</script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.7/highlight.min.js"></script>
-	<script>
-		$('pre code').each(function(i, block) {
-			hljs.highlightBlock(block);
-		});
-	</script>
-	<!--// Adblocker Code -->
-	
-	
+            <div class="card p-3 col-12 col-md-6 col-lg-4">
+                <div class="card-wrapper">
+                    <div class="card-img">
+                        <div class="mbr-overlay"></div>
+                        <div class="mbr-section-btn text-center"><a href="/games/battle-golf-online.html" class="btn btn-primary display-4">Play Now</a></div>
+                        <img src="assets/images/golf-300x300.png" alt="golf" title="">
+                    </div>
+                    <div class="card-box">
+                        <h4 class="card-title mbr-fonts-style display-7">
+                            Battle Golf Online</h4>
+                        
+                    </div>
+                </div>
+            </div>
+
+            
+        </div>
+    </div>
+</section>
+
+<section class="features18 popup-btn-cards cid-qJvYXzFh0z" id="features18-5">
+
+    
+
+    
+    <div class="container">
+        
+        
+        <div class="media-container-row pt-5 ">
+            <div class="card p-3 col-12 col-md-6 col-lg-4">
+                <div class="card-wrapper ">
+                    <div class="card-img">
+                        <div class="mbr-overlay"></div>
+                        <div class="mbr-section-btn text-center"><a href="/games/nobrakes.html" class="btn btn-primary display-4">Play Now</a></div>
+                        <img src="assets/images/nobrakes-300x300.png" alt="No Brakes" title="No brakes IO">
+                    </div>
+                    <div class="card-box">
+                        <h4 class="card-title mbr-fonts-style display-7">
+                            No Brakes Io</h4>
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="card p-3 col-12 col-md-6 col-lg-4">
+                <div class="card-wrapper">
+                    <div class="card-img">
+                        <div class="mbr-overlay"></div>
+                        <div class="mbr-section-btn text-center"><a href="/games/tanxio.html" class="btn btn-primary display-4">Play Now</a></div>
+                        <img src="assets/images/tanks-300x300.png" alt="Tanx.Io" title="Tanks">
+                    </div>
+                    <div class="card-box">
+                        <h4 class="card-title mbr-fonts-style display-7">
+                            tank.io</h4>
+                        
+                    </div>
+                </div>
+            </div>
+
+            <div class="card p-3 col-12 col-md-6 col-lg-4">
+                <div class="card-wrapper">
+                    <div class="card-img">
+                        <div class="mbr-overlay"></div>
+                        <div class="mbr-section-btn text-center"><a href="/games/8ball.html" class="btn btn-primary display-4">Play Now</a></div>
+                        <img src="assets/images/8-ball-pool-300x300.png" alt="8 Ball Pool" title="8ball">
+                    </div>
+                    <div class="card-box">
+                        <h4 class="card-title mbr-fonts-style display-7">
+                            8 ball Pool</h4>
+                        
+                    </div>
+                </div>
+            </div>
+
+            
+        </div>
+    </div>
+</section>
+
+<section class="mbr-section content8 cid-qJvZJSN2cW" id="content8-7">
+
+    
+
+    <div class="container">
+        <div class="media-container-row title">
+            <div class="col-12 col-md-8">
+                <div class="mbr-section-btn align-center"><a class="btn btn-primary display-4" href="#">Game DataBase</a></div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="cid-qJw2uE5LFz" id="social-buttons2-b">
+
+    
+
+    
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="col-md-8 align-center">
+                <h2 class="pb-3 mbr-fonts-style display-2">
+                    FOLLOW US!
+                </h2>
+                <div class="social-list pl-0 mb-0">
+                    <a href="https://twitter.com/flake_game" target="_blank">
+                        <span class="px-2 mbr-iconfont mbr-iconfont-social socicon-twitter socicon"></span>
+                    </a>
+                    <a href="https://www.facebook.com/flakegames/" target="_blank">
+                        <span class="px-2 mbr-iconfont mbr-iconfont-social socicon-facebook socicon"></span>
+                    </a>
+                    <a href="https://www.instagram.com/flakegame/" target="_blank">
+                        <span class="px-2 mbr-iconfont mbr-iconfont-social socicon-instagram socicon"></span>
+                    </a>
+                    <a href="https://plus.google.com/+FlakeGa" target="_blank">
+                        <span class="px-2 mbr-iconfont mbr-iconfont-social socicon-googleplus socicon"></span>
+                    </a>
+                    <a href="https://plus.google.com/u/0/+Mobirise" target="_blank">
+                        
+                    </a>
+                    <a href="https://www.behance.net/Mobirise" target="_blank">
+                        
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="footer3 cid-qJw2EpxHAA" id="footer3-d">
+
+    
+
+    
+
+    <div class="container">
+        <div class="media-container-row content">
+            <div class="col-md-2 col-sm-4">
+                <div class="mb-3 img-logo">
+                    <a href="https://flakega.me">
+                         <img src="assets/images/controller-gamepad-icon-computer-game-video-games-1784573-720x720.png" alt="Flake Games" title="Flake Games Icon">
+                    </a>
+                </div>
+                <p class="mbr-fonts-style foot-logo display-7">Flake Games</p>
+            </div>
+            <div class="col-md-3 col-sm-4">
+                <p class="mb-4 mbr-fonts-style foot-title display-7">
+                    RESOURCE</p>
+                <p class="mbr-text mbr-links-column mbr-fonts-style display-7">
+                    <a href="/About" class="text-black">About</a>&nbsp;<br><a href="/games" class="text-black"></a><a href="/games" class="text-black">Games</a>
+                    <br><a href="https://flakega.me/terms-service.html" class="text-black"></a><a href="https://flakega.me/terms-service.html" target="_blank" class="text-black">Terms</a>&nbsp;<br><a href="https://flakega.me/privacypolicy.htm" class="text-black">Privacy</a>&nbsp;<br><a href="/legal" class="text-black">L</a>egal</p>
+            </div>
+            <div class="col-md-3 col-sm-4">
+                <p class="mb-4 mbr-fonts-style foot-title display-7">
+                    CATEGORIES
+                </p>
+                <p class="mbr-text mbr-fonts-style mbr-links-column display-7"><a href="https://flakedevelop.me" class="text-black">Flake Development&nbsp;</a><br><a href="#" class="text-black">C</a>areer&nbsp;<br><a href="/beta" class="text-black">Beta</a>
+                    <br><a href="/developer" class="text-black">Developer</a>&nbsp;<br><a href="https://flak.ga/SUBMITGAME" class="text-black">Submit Game</a></p>
+            </div>
+            <div class="col-md-4 col-sm-12">
+                <p class="mb-4 mbr-fonts-style foot-title display-7">
+                    SUBSCRIBE
+                </p>
+                <p class="mbr-text form-text mbr-fonts-style display-7">
+                    Get updates and free resources.
+                </p>
+                <div class="media-container-column" data-form-type="formoid">
+                    <div data-form-alert="" hidden="" class="align-center">Thank You. We will Add you soon.</div>
+
+                    <form class="form-inline" action="https://mobirise.com/" method="post" data-form-title="Mobirise Form">
+                        <input type="hidden" value="YEtzyU/Y6cULpiOz0DCBtmA5OEEeIRpNla6xgLxhHomjUpI374M9CqtEyuBTYVfP63Uuhvnniy0Y0BsTW2kWo5vnv1lYzGXLY1w9X2lKIRebNY94oT2r2ay/yiLBDnvC" data-form-email="true">
+                        <div class="form-group">
+                            <input type="email" class="form-control input-sm input-inverse my-2" name="email" required="" data-form-field="Email" placeholder="Email" id="email-footer3-d">
+                        </div>
+                        <div class="input-group-btn m-2">
+                            <button href="" class="btn btn-primary display-4" type="submit" role="button">Subscribe</button>
+                        </div>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+        <div class="footer-lower">
+            <div class="media-container-row">
+                <div class="col-sm-12">
+                    <hr>
+                </div>
+            </div>
+            <div class="media-container-row">
+                <div class="col-sm-6 copyright">
+                    <p class="mbr-text mbr-fonts-style display-7">
+                        © Copyright 2016-2018 <a href="https://flakedevelop.me">Flake Development</a> - All Rights Reserved
+                    </p>
+                </div>
+                <div class="col-md-6">
+                    <div class="social-list align-right">
+                        <div class="soc-item">
+                            <a href="https://twitter.com/flake_game" target="_blank">
+                                <span class="mbr-iconfont mbr-iconfont-social socicon-twitter socicon"></span>
+                            </a>
+                        </div>
+                        <div class="soc-item">
+                            <a href="https://www.facebook.com/flakegames/" target="_blank">
+                                <span class="mbr-iconfont mbr-iconfont-social socicon-facebook socicon"></span>
+                            </a>
+                        </div>
+                        <div class="soc-item">
+                            <a href="https://plus.google.com/+FlakeGa" target="_blank">
+                                <span class="mbr-iconfont mbr-iconfont-social socicon-googleplus socicon"></span>
+                            </a>
+                        </div>
+                        <div class="soc-item">
+                            <a href="https://www.instagram.com/flakegame/" target="_blank">
+                                <span class="mbr-iconfont mbr-iconfont-social socicon-instagram socicon"></span>
+                            </a>
+                        </div>
+                        
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 
 
-	<script type="text/javascript">
-    window.doorbellOptions = {
-        appKey: '3riVqV9jPxAFNg7UgOW40QGG5oHG9qsR8upMhOEbWRNbcXdwl6ISyT7I0IodUN0R'
-    };
-    (function(w, d, t) {
-        var hasLoaded = false;
-        function l() { if (hasLoaded) { return; } hasLoaded = true; window.doorbellOptions.windowLoaded = true; var g = d.createElement(t);g.id = 'doorbellScript';g.type = 'text/javascript';g.async = true;g.src = 'https://embed.doorbell.io/button/6677?t='+(new Date().getTime());(d.getElementsByTagName('head')[0]||d.getElementsByTagName('body')[0]).appendChild(g); }
-        if (w.attachEvent) { w.attachEvent('onload', l); } else if (w.addEventListener) { w.addEventListener('load', l, false); } else { l(); }
-        if (d.readyState == 'complete') { l(); }
-    }(window, document, 'script'));
-</script>
-	
-	<!-- ENABLE DECEMBER 1ST 2018 <script src="holidays/fallingsnow_v6.js"></script> -->
-	
-	
-</body>
+  <script src="assets/web/assets/jquery/jquery.min.js"></script>
+  <script src="assets/popper/popper.min.js"></script>
+  <script src="assets/tether/tether.min.js"></script>
+  <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+  <script src="assets/smoothscroll/smooth-scroll.js"></script>
+  <script src="assets/parallax/jarallax.min.js"></script>
+  <script src="assets/dropdown/js/script.min.js"></script>
+  <script src="assets/touchswipe/jquery.touch-swipe.min.js"></script>
+  <script src="assets/mbr-flip-card/mbr-flip-card.js"></script>
+  <script src="assets/mbr-popup-btns/mbr-popup-btns.js"></script>
+  <script src="assets/sociallikes/social-likes.js"></script>
+  <script src="assets/viewportchecker/jquery.viewportchecker.js"></script>
+  <script src="assets/theme/js/script.js"></script>
+  <script src="assets/formoid/formoid.min.js"></script>
+  
+  
+ <div id="scrollToTop" class="scrollToTop mbr-arrow-up"><a style="text-align: center;"><i></i></a></div>
+    <input name="animation" type="hidden">
+  </body>
 </html>
